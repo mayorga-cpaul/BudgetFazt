@@ -42,7 +42,7 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.nightLabel4.Location = new System.Drawing.Point(105, 19);
+            this.nightLabel4.Location = new System.Drawing.Point(105, 20);
             this.nightLabel4.Name = "nightLabel4";
             this.nightLabel4.Size = new System.Drawing.Size(137, 20);
             this.nightLabel4.TabIndex = 18;
@@ -55,7 +55,7 @@
             this.txtName.BackColor = System.Drawing.Color.Transparent;
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.txtName.Location = new System.Drawing.Point(248, 19);
+            this.txtName.Location = new System.Drawing.Point(248, 20);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(55, 20);
             this.txtName.TabIndex = 19;
@@ -75,11 +75,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.nightLabel4);
             this.Name = "UCompany";
-            this.Size = new System.Drawing.Size(356, 67);
+            this.Size = new System.Drawing.Size(351, 68);
+            this.Load += new System.EventHandler(this.UCompany_Load);
+            this.Click += new System.EventHandler(this.UCompany_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

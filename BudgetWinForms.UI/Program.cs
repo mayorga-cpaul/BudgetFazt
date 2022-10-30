@@ -1,7 +1,5 @@
 using BudgetFazt.Infraestructure;
 using BudgetFazt.Infraestructure.Data;
-using BudgetFazt.Infraestructure.Interfaces;
-using BudgetFazt.Infraestructure.Repositories;
 using BudgetWinForms.UI.Settings;
 using BudgetWinForms.UI.Views;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +16,11 @@ namespace BudgetWinForms.UI
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
+            //using (var db = new BudgetFaztContext())
+            //{
+            //    await db.Database.EnsureCreatedAsync();
+            //}
 
             var services = new ServiceCollection();
 

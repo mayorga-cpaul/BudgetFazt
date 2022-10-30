@@ -1,4 +1,5 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
 using System.Runtime.InteropServices;
 
@@ -44,10 +45,19 @@ namespace BudgetWinForms.UI.Views
             this.Close();
         }
 
-        private void btnAcessRequest_Click(object sender, EventArgs e)
+        private async void btnAcessRequest_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmCompanies).Show();
-            SingletonForms.GetForm(FormType.FrmLogin).Hide();
+            if (await userRepository.AccessToAppAsync(txtEmail.Texts, txtPassword.Texts))
+            {
+                var user = await userRepository.GetByEmailPassword(txtEmail.Texts, txtPassword.Texts);
+                DataOnMemory.UserId = user.Id;
+                SingletonForms.GetForm(FormType.FrmCompanies).Show();
+                SingletonForms.GetForm(FormType.FrmLogin).Hide();
+
+            }else
+            {
+                MessageBox.Show("Error al iniciar sesión, verifica tu contraseña", "Error");
+            }
         }
 
         private void btnNewUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

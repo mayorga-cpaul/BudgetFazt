@@ -13,9 +13,9 @@ namespace BudgetFazt.Infraestructure.Repositories
             this.repository = repository;
         }
 
-        public Task<IEnumerable<Article>> GetAllArticles(int projectId)
+        public async Task<IEnumerable<Article>> GetAllArticles(int projectId)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(repository.Articles.Where(e => e.ProjectId == projectId));
         }
 
         public Task<bool> SetArticle(Article article)

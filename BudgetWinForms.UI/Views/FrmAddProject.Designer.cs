@@ -36,17 +36,19 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAdd = new ReaLTaiizor.Controls.NightButton();
-            this.rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtEmail = new RJCodeAdvance.RJControls.RJTextBox();
-            this.poisonDateTime1 = new ReaLTaiizor.Controls.PoisonDateTime();
-            this.poisonDateTime2 = new ReaLTaiizor.Controls.PoisonDateTime();
-            this.cmbClients = new ReaLTaiizor.Controls.PoisonComboBox();
-            this.btnAddClient = new System.Windows.Forms.PictureBox();
+            this.txtDescription = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtName = new RJCodeAdvance.RJControls.RJTextBox();
+            this.dtStart = new ReaLTaiizor.Controls.PoisonDateTime();
+            this.dtEnd = new ReaLTaiizor.Controls.PoisonDateTime();
+            this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
+            this.nightLabel2 = new ReaLTaiizor.Controls.NightLabel();
+            this.nightLabel3 = new ReaLTaiizor.Controls.NightLabel();
+            this.nightLabel5 = new ReaLTaiizor.Controls.NightLabel();
+            this.btnAddCustomer = new RJCodeAdvance.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddClient)).BeginInit();
             this.SuspendLayout();
             // 
             // nightButton1
@@ -60,7 +62,7 @@
             this.nightButton1.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.nightButton1.Location = new System.Drawing.Point(83, 418);
+            this.nightButton1.Location = new System.Drawing.Point(80, 459);
             this.nightButton1.MinimumSize = new System.Drawing.Size(144, 47);
             this.nightButton1.Name = "nightButton1";
             this.nightButton1.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -139,7 +141,7 @@
             this.btnAdd.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnAdd.Location = new System.Drawing.Point(284, 418);
+            this.btnAdd.Location = new System.Drawing.Point(281, 459);
             this.btnAdd.MinimumSize = new System.Drawing.Size(144, 47);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -153,105 +155,162 @@
             this.btnAdd.Text = "Agregar";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // rjTextBox2
+            // txtDescription
             // 
-            this.rjTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjTextBox2.AutoSize = true;
-            this.rjTextBox2.BackColor = System.Drawing.Color.White;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.rjTextBox2.BorderRadius = 15;
-            this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(80, 188);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox2.PasswordChar = false;
-            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.rjTextBox2.PlaceholderText = "Descripción";
-            this.rjTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rjTextBox2.Size = new System.Drawing.Size(392, 35);
-            this.rjTextBox2.TabIndex = 49;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
+            this.txtDescription.AutoSize = true;
+            this.txtDescription.BackColor = System.Drawing.Color.White;
+            this.txtDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtDescription.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtDescription.BorderRadius = 15;
+            this.txtDescription.BorderSize = 2;
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtDescription.Location = new System.Drawing.Point(80, 199);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescription.Multiline = false;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescription.PasswordChar = false;
+            this.txtDescription.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtDescription.PlaceholderText = "Descripción";
+            this.txtDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDescription.Size = new System.Drawing.Size(392, 35);
+            this.txtDescription.TabIndex = 49;
+            this.txtDescription.Texts = "";
+            this.txtDescription.UnderlinedStyle = false;
             // 
-            // txtEmail
+            // txtName
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.AutoSize = true;
-            this.txtEmail.BackColor = System.Drawing.Color.White;
-            this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.txtEmail.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.txtEmail.BorderRadius = 15;
-            this.txtEmail.BorderSize = 2;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.txtEmail.Location = new System.Drawing.Point(80, 127);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Multiline = false;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEmail.PasswordChar = false;
-            this.txtEmail.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txtEmail.PlaceholderText = "Nombre de proyecto";
-            this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtEmail.Size = new System.Drawing.Size(392, 35);
-            this.txtEmail.TabIndex = 48;
-            this.txtEmail.Texts = "";
-            this.txtEmail.UnderlinedStyle = false;
+            this.txtName.AutoSize = true;
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtName.BorderRadius = 15;
+            this.txtName.BorderSize = 2;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtName.Location = new System.Drawing.Point(80, 127);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Multiline = false;
+            this.txtName.Name = "txtName";
+            this.txtName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtName.PasswordChar = false;
+            this.txtName.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtName.PlaceholderText = "Nombre de proyecto";
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtName.Size = new System.Drawing.Size(392, 35);
+            this.txtName.TabIndex = 48;
+            this.txtName.Texts = "";
+            this.txtName.UnderlinedStyle = false;
             // 
-            // poisonDateTime1
+            // dtStart
             // 
-            this.poisonDateTime1.Location = new System.Drawing.Point(83, 283);
-            this.poisonDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
-            this.poisonDateTime1.Name = "poisonDateTime1";
-            this.poisonDateTime1.Size = new System.Drawing.Size(389, 30);
-            this.poisonDateTime1.TabIndex = 59;
+            this.dtStart.Location = new System.Drawing.Point(80, 266);
+            this.dtStart.MinimumSize = new System.Drawing.Size(0, 30);
+            this.dtStart.Name = "dtStart";
+            this.dtStart.Size = new System.Drawing.Size(389, 30);
+            this.dtStart.TabIndex = 59;
             // 
-            // poisonDateTime2
+            // dtEnd
             // 
-            this.poisonDateTime2.Location = new System.Drawing.Point(83, 330);
-            this.poisonDateTime2.MinimumSize = new System.Drawing.Size(0, 30);
-            this.poisonDateTime2.Name = "poisonDateTime2";
-            this.poisonDateTime2.Size = new System.Drawing.Size(389, 30);
-            this.poisonDateTime2.TabIndex = 60;
+            this.dtEnd.Location = new System.Drawing.Point(80, 331);
+            this.dtEnd.MinimumSize = new System.Drawing.Size(0, 30);
+            this.dtEnd.Name = "dtEnd";
+            this.dtEnd.Size = new System.Drawing.Size(389, 30);
+            this.dtEnd.TabIndex = 60;
             // 
-            // cmbClients
+            // nightLabel1
             // 
-            this.cmbClients.FormattingEnabled = true;
-            this.cmbClients.ItemHeight = 24;
-            this.cmbClients.Location = new System.Drawing.Point(80, 236);
-            this.cmbClients.Name = "cmbClients";
-            this.cmbClients.Size = new System.Drawing.Size(350, 30);
-            this.cmbClients.TabIndex = 61;
-            this.cmbClients.UseSelectable = true;
+            this.nightLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel1.AutoSize = true;
+            this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel1.Location = new System.Drawing.Point(89, 102);
+            this.nightLabel1.Name = "nightLabel1";
+            this.nightLabel1.Size = new System.Drawing.Size(148, 20);
+            this.nightLabel1.TabIndex = 61;
+            this.nightLabel1.Text = "Nombre de proyecto";
             // 
-            // btnAddClient
+            // nightLabel2
             // 
-            this.btnAddClient.Image = ((System.Drawing.Image)(resources.GetObject("btnAddClient.Image")));
-            this.btnAddClient.Location = new System.Drawing.Point(437, 236);
-            this.btnAddClient.Name = "btnAddClient";
-            this.btnAddClient.Size = new System.Drawing.Size(38, 30);
-            this.btnAddClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAddClient.TabIndex = 62;
-            this.btnAddClient.TabStop = false;
-            this.btnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
+            this.nightLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel2.AutoSize = true;
+            this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel2.Location = new System.Drawing.Point(89, 176);
+            this.nightLabel2.Name = "nightLabel2";
+            this.nightLabel2.Size = new System.Drawing.Size(87, 20);
+            this.nightLabel2.TabIndex = 62;
+            this.nightLabel2.Text = "Descripción";
+            // 
+            // nightLabel3
+            // 
+            this.nightLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel3.AutoSize = true;
+            this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel3.Location = new System.Drawing.Point(89, 242);
+            this.nightLabel3.Name = "nightLabel3";
+            this.nightLabel3.Size = new System.Drawing.Size(108, 20);
+            this.nightLabel3.TabIndex = 63;
+            this.nightLabel3.Text = "Fecha de inicio";
+            // 
+            // nightLabel5
+            // 
+            this.nightLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel5.AutoSize = true;
+            this.nightLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel5.Location = new System.Drawing.Point(89, 307);
+            this.nightLabel5.Name = "nightLabel5";
+            this.nightLabel5.Size = new System.Drawing.Size(171, 20);
+            this.nightLabel5.TabIndex = 64;
+            this.nightLabel5.Text = "Finalización de proyecto";
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.BackColor = System.Drawing.Color.White;
+            this.btnAddCustomer.BackgroundColor = System.Drawing.Color.White;
+            this.btnAddCustomer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAddCustomer.BorderRadius = 15;
+            this.btnAddCustomer.BorderSize = 2;
+            this.btnAddCustomer.FlatAppearance.BorderSize = 0;
+            this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAddCustomer.Location = new System.Drawing.Point(80, 388);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(392, 50);
+            this.btnAddCustomer.TabIndex = 65;
+            this.btnAddCustomer.Text = "Agregar cliente";
+            this.btnAddCustomer.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // FrmAddProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(558, 482);
-            this.Controls.Add(this.btnAddClient);
-            this.Controls.Add(this.cmbClients);
-            this.Controls.Add(this.poisonDateTime2);
-            this.Controls.Add(this.poisonDateTime1);
+            this.ClientSize = new System.Drawing.Size(558, 534);
+            this.Controls.Add(this.btnAddCustomer);
+            this.Controls.Add(this.nightLabel5);
+            this.Controls.Add(this.nightLabel3);
+            this.Controls.Add(this.nightLabel2);
+            this.Controls.Add(this.nightLabel1);
+            this.Controls.Add(this.dtEnd);
+            this.Controls.Add(this.dtStart);
             this.Controls.Add(this.nightButton1);
             this.Controls.Add(this.nightLabel4);
             this.Controls.Add(this.pictureBox4);
@@ -259,17 +318,17 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.rjTextBox2);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAddProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAddProject";
+            this.Load += new System.EventHandler(this.FrmAddProject_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddClient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,11 +343,14 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private ReaLTaiizor.Controls.NightButton btnAdd;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox2;
-        private RJCodeAdvance.RJControls.RJTextBox txtEmail;
-        private ReaLTaiizor.Controls.PoisonDateTime poisonDateTime1;
-        private ReaLTaiizor.Controls.PoisonDateTime poisonDateTime2;
-        private ReaLTaiizor.Controls.PoisonComboBox cmbClients;
-        private PictureBox btnAddClient;
+        private RJCodeAdvance.RJControls.RJTextBox txtDescription;
+        private RJCodeAdvance.RJControls.RJTextBox txtName;
+        private ReaLTaiizor.Controls.PoisonDateTime dtStart;
+        private ReaLTaiizor.Controls.PoisonDateTime dtEnd;
+        private ReaLTaiizor.Controls.NightLabel nightLabel1;
+        private ReaLTaiizor.Controls.NightLabel nightLabel2;
+        private ReaLTaiizor.Controls.NightLabel nightLabel3;
+        private ReaLTaiizor.Controls.NightLabel nightLabel5;
+        private RJCodeAdvance.RJControls.RJButton btnAddCustomer;
     }
 }

@@ -122,11 +122,11 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
+            this.btnCreate.BackColor = System.Drawing.Color.Ivory;
             this.btnCreate.Controls.Add(this.nightLabel5);
             this.btnCreate.Controls.Add(this.nightLabel1);
             this.btnCreate.Controls.Add(this.pictureBox2);
-            this.btnCreate.Location = new System.Drawing.Point(486, 162);
+            this.btnCreate.Location = new System.Drawing.Point(496, 163);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(272, 130);
             this.btnCreate.TabIndex = 15;
@@ -170,11 +170,11 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
+            this.panel2.BackColor = System.Drawing.Color.Ivory;
             this.panel2.Controls.Add(this.nightLabel3);
             this.panel2.Controls.Add(this.nightLabel2);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(486, 298);
+            this.panel2.Location = new System.Drawing.Point(496, 299);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(272, 127);
             this.panel2.TabIndex = 16;

@@ -1,6 +1,9 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
+using BudgetWinForms.UI.UControl;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace BudgetWinForms.UI.Views
 {
@@ -25,8 +28,7 @@ namespace BudgetWinForms.UI.Views
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmLogin).Show();
-            this.Hide();
+            Application.Exit();
         }
 
 
@@ -48,9 +50,21 @@ namespace BudgetWinForms.UI.Views
             this.Hide();
         }
 
-        private void FrmCompanies_Load(object sender, EventArgs e)
+        private async void FrmCompanies_Load(object sender, EventArgs e)
         {
+            await Charge();
+        }
 
+        private async Task Charge()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            var companies = await companyRepository.GetCompanies(DataOnMemory.UserId);
+
+            foreach (var item in companies)
+            {
+                UCompany uCompany = new UCompany(companyRepository, item.Id);
+                flowLayoutPanel1.Controls.Add(uCompany);
+            }
         }
     }
 }

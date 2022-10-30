@@ -1,4 +1,7 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Infraestructure.Models;
+using BudgetFazt.Infraestructure.Repositories;
+using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
 using System.Runtime.InteropServices; 
 
@@ -26,8 +29,19 @@ namespace BudgetWinForms.UI.Views
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnAddCompany_Click(object sender, EventArgs e)
+        private async void btnAddCompany_Click(object sender, EventArgs e)
         {
+            Company company = new Company()
+            {
+                UserId = DataOnMemory.UserId,
+                CompanyName = txtCompanyName.Texts,
+                Description = txtDescription.Texts,
+                Phone = txtPhone.Texts,
+                Address = txtAddress.Texts,
+            };
+
+            await companyRepositor.CreateAsync(company);
+            DataOnMemory.CompanyId = await companyRepositor.LastCretedIndex();
             SingletonForms.GetForm(FormType.FrmMain).Show();
             this.Hide();
         }

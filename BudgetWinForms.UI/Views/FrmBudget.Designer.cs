@@ -35,37 +35,37 @@
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.nightLabel11 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblTotalExpense = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel12 = new ReaLTaiizor.Controls.NightLabel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.nightLabel9 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblIrr = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel10 = new ReaLTaiizor.Controls.NightLabel();
             this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.nightLabel6 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblFin = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel8 = new ReaLTaiizor.Controls.NightLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.nightLabel17 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblClientPhone = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel18 = new ReaLTaiizor.Controls.NightLabel();
-            this.nightLabel19 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblClientAdress = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel20 = new ReaLTaiizor.Controls.NightLabel();
-            this.nightLabel21 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblClientName = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel22 = new ReaLTaiizor.Controls.NightLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.nightLabel2 = new ReaLTaiizor.Controls.NightLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.nightLabel15 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblCompanyPhone = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel16 = new ReaLTaiizor.Controls.NightLabel();
-            this.nightLabel13 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblCompanyAddress = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel14 = new ReaLTaiizor.Controls.NightLabel();
-            this.nightLabel7 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblCompanyName = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel4 = new ReaLTaiizor.Controls.NightLabel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.nightLabel3 = new ReaLTaiizor.Controls.NightLabel();
+            this.lblIinicio = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel5 = new ReaLTaiizor.Controls.NightLabel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.nightButton1 = new ReaLTaiizor.Controls.NightButton();
@@ -134,7 +134,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(200)))));
-            this.panel9.Controls.Add(this.nightLabel11);
+            this.panel9.Controls.Add(this.lblTotalExpense);
             this.panel9.Controls.Add(this.nightLabel12);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(318, 3);
@@ -142,17 +142,17 @@
             this.panel9.Size = new System.Drawing.Size(310, 37);
             this.panel9.TabIndex = 6;
             // 
-            // nightLabel11
+            // lblTotalExpense
             // 
-            this.nightLabel11.AutoSize = true;
-            this.nightLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel11.ForeColor = System.Drawing.Color.White;
-            this.nightLabel11.Location = new System.Drawing.Point(97, 8);
-            this.nightLabel11.Name = "nightLabel11";
-            this.nightLabel11.Size = new System.Drawing.Size(73, 20);
-            this.nightLabel11.TabIndex = 33;
-            this.nightLabel11.Text = "<Name>";
+            this.lblTotalExpense.AutoSize = true;
+            this.lblTotalExpense.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalExpense.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalExpense.ForeColor = System.Drawing.Color.White;
+            this.lblTotalExpense.Location = new System.Drawing.Point(97, 8);
+            this.lblTotalExpense.Name = "lblTotalExpense";
+            this.lblTotalExpense.Size = new System.Drawing.Size(73, 20);
+            this.lblTotalExpense.TabIndex = 33;
+            this.lblTotalExpense.Text = "<Name>";
             // 
             // nightLabel12
             // 
@@ -169,7 +169,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(200)))));
-            this.panel8.Controls.Add(this.nightLabel9);
+            this.panel8.Controls.Add(this.lblIrr);
             this.panel8.Controls.Add(this.nightLabel10);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 3);
@@ -177,17 +177,17 @@
             this.panel8.Size = new System.Drawing.Size(309, 37);
             this.panel8.TabIndex = 5;
             // 
-            // nightLabel9
+            // lblIrr
             // 
-            this.nightLabel9.AutoSize = true;
-            this.nightLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel9.ForeColor = System.Drawing.Color.White;
-            this.nightLabel9.Location = new System.Drawing.Point(78, 8);
-            this.nightLabel9.Name = "nightLabel9";
-            this.nightLabel9.Size = new System.Drawing.Size(73, 20);
-            this.nightLabel9.TabIndex = 33;
-            this.nightLabel9.Text = "<Name>";
+            this.lblIrr.AutoSize = true;
+            this.lblIrr.BackColor = System.Drawing.Color.Transparent;
+            this.lblIrr.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIrr.ForeColor = System.Drawing.Color.White;
+            this.lblIrr.Location = new System.Drawing.Point(78, 8);
+            this.lblIrr.Name = "lblIrr";
+            this.lblIrr.Size = new System.Drawing.Size(73, 20);
+            this.lblIrr.TabIndex = 33;
+            this.lblIrr.Text = "<Name>";
             // 
             // nightLabel10
             // 
@@ -274,7 +274,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(200)))));
-            this.panel7.Controls.Add(this.nightLabel6);
+            this.panel7.Controls.Add(this.lblFin);
             this.panel7.Controls.Add(this.nightLabel8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(320, 142);
@@ -282,17 +282,17 @@
             this.panel7.Size = new System.Drawing.Size(311, 32);
             this.panel7.TabIndex = 5;
             // 
-            // nightLabel6
+            // lblFin
             // 
-            this.nightLabel6.AutoSize = true;
-            this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel6.ForeColor = System.Drawing.Color.White;
-            this.nightLabel6.Location = new System.Drawing.Point(82, 5);
-            this.nightLabel6.Name = "nightLabel6";
-            this.nightLabel6.Size = new System.Drawing.Size(73, 20);
-            this.nightLabel6.TabIndex = 35;
-            this.nightLabel6.Text = "<Name>";
+            this.lblFin.AutoSize = true;
+            this.lblFin.BackColor = System.Drawing.Color.Transparent;
+            this.lblFin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFin.ForeColor = System.Drawing.Color.White;
+            this.lblFin.Location = new System.Drawing.Point(82, 5);
+            this.lblFin.Name = "lblFin";
+            this.lblFin.Size = new System.Drawing.Size(73, 20);
+            this.lblFin.TabIndex = 35;
+            this.lblFin.Text = "<Name>";
             // 
             // nightLabel8
             // 
@@ -318,11 +318,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.nightLabel17);
+            this.panel5.Controls.Add(this.lblClientPhone);
             this.panel5.Controls.Add(this.nightLabel18);
-            this.panel5.Controls.Add(this.nightLabel19);
+            this.panel5.Controls.Add(this.lblClientAdress);
             this.panel5.Controls.Add(this.nightLabel20);
-            this.panel5.Controls.Add(this.nightLabel21);
+            this.panel5.Controls.Add(this.lblClientName);
             this.panel5.Controls.Add(this.nightLabel22);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
@@ -330,17 +330,17 @@
             this.panel5.Size = new System.Drawing.Size(311, 82);
             this.panel5.TabIndex = 1;
             // 
-            // nightLabel17
+            // lblClientPhone
             // 
-            this.nightLabel17.AutoSize = true;
-            this.nightLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel17.Location = new System.Drawing.Point(98, 51);
-            this.nightLabel17.Name = "nightLabel17";
-            this.nightLabel17.Size = new System.Drawing.Size(69, 20);
-            this.nightLabel17.TabIndex = 37;
-            this.nightLabel17.Text = "<Name>";
+            this.lblClientPhone.AutoSize = true;
+            this.lblClientPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblClientPhone.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblClientPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.lblClientPhone.Location = new System.Drawing.Point(98, 51);
+            this.lblClientPhone.Name = "lblClientPhone";
+            this.lblClientPhone.Size = new System.Drawing.Size(69, 20);
+            this.lblClientPhone.TabIndex = 37;
+            this.lblClientPhone.Text = "<Name>";
             // 
             // nightLabel18
             // 
@@ -354,17 +354,17 @@
             this.nightLabel18.TabIndex = 36;
             this.nightLabel18.Text = "Teléfono:";
             // 
-            // nightLabel19
+            // lblClientAdress
             // 
-            this.nightLabel19.AutoSize = true;
-            this.nightLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel19.Location = new System.Drawing.Point(98, 31);
-            this.nightLabel19.Name = "nightLabel19";
-            this.nightLabel19.Size = new System.Drawing.Size(69, 20);
-            this.nightLabel19.TabIndex = 35;
-            this.nightLabel19.Text = "<Name>";
+            this.lblClientAdress.AutoSize = true;
+            this.lblClientAdress.BackColor = System.Drawing.Color.Transparent;
+            this.lblClientAdress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblClientAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.lblClientAdress.Location = new System.Drawing.Point(98, 31);
+            this.lblClientAdress.Name = "lblClientAdress";
+            this.lblClientAdress.Size = new System.Drawing.Size(69, 20);
+            this.lblClientAdress.TabIndex = 35;
+            this.lblClientAdress.Text = "<Name>";
             // 
             // nightLabel20
             // 
@@ -378,17 +378,17 @@
             this.nightLabel20.TabIndex = 34;
             this.nightLabel20.Text = "Dirección:";
             // 
-            // nightLabel21
+            // lblClientName
             // 
-            this.nightLabel21.AutoSize = true;
-            this.nightLabel21.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel21.Location = new System.Drawing.Point(98, 11);
-            this.nightLabel21.Name = "nightLabel21";
-            this.nightLabel21.Size = new System.Drawing.Size(69, 20);
-            this.nightLabel21.TabIndex = 33;
-            this.nightLabel21.Text = "<Name>";
+            this.lblClientName.AutoSize = true;
+            this.lblClientName.BackColor = System.Drawing.Color.Transparent;
+            this.lblClientName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblClientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.lblClientName.Location = new System.Drawing.Point(98, 11);
+            this.lblClientName.Name = "lblClientName";
+            this.lblClientName.Size = new System.Drawing.Size(69, 20);
+            this.lblClientName.TabIndex = 33;
+            this.lblClientName.Text = "<Name>";
             // 
             // nightLabel22
             // 
@@ -449,11 +449,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.nightLabel15);
+            this.panel1.Controls.Add(this.lblCompanyPhone);
             this.panel1.Controls.Add(this.nightLabel16);
-            this.panel1.Controls.Add(this.nightLabel13);
+            this.panel1.Controls.Add(this.lblCompanyAddress);
             this.panel1.Controls.Add(this.nightLabel14);
-            this.panel1.Controls.Add(this.nightLabel7);
+            this.panel1.Controls.Add(this.lblCompanyName);
             this.panel1.Controls.Add(this.nightLabel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 54);
@@ -461,17 +461,17 @@
             this.panel1.Size = new System.Drawing.Size(311, 82);
             this.panel1.TabIndex = 0;
             // 
-            // nightLabel15
+            // lblCompanyPhone
             // 
-            this.nightLabel15.AutoSize = true;
-            this.nightLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel15.Location = new System.Drawing.Point(92, 51);
-            this.nightLabel15.Name = "nightLabel15";
-            this.nightLabel15.Size = new System.Drawing.Size(69, 20);
-            this.nightLabel15.TabIndex = 31;
-            this.nightLabel15.Text = "<Name>";
+            this.lblCompanyPhone.AutoSize = true;
+            this.lblCompanyPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompanyPhone.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCompanyPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.lblCompanyPhone.Location = new System.Drawing.Point(92, 51);
+            this.lblCompanyPhone.Name = "lblCompanyPhone";
+            this.lblCompanyPhone.Size = new System.Drawing.Size(69, 20);
+            this.lblCompanyPhone.TabIndex = 31;
+            this.lblCompanyPhone.Text = "<Name>";
             // 
             // nightLabel16
             // 
@@ -485,17 +485,17 @@
             this.nightLabel16.TabIndex = 30;
             this.nightLabel16.Text = "Teléfono:";
             // 
-            // nightLabel13
+            // lblCompanyAddress
             // 
-            this.nightLabel13.AutoSize = true;
-            this.nightLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel13.Location = new System.Drawing.Point(92, 31);
-            this.nightLabel13.Name = "nightLabel13";
-            this.nightLabel13.Size = new System.Drawing.Size(69, 20);
-            this.nightLabel13.TabIndex = 29;
-            this.nightLabel13.Text = "<Name>";
+            this.lblCompanyAddress.AutoSize = true;
+            this.lblCompanyAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompanyAddress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCompanyAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.lblCompanyAddress.Location = new System.Drawing.Point(92, 31);
+            this.lblCompanyAddress.Name = "lblCompanyAddress";
+            this.lblCompanyAddress.Size = new System.Drawing.Size(69, 20);
+            this.lblCompanyAddress.TabIndex = 29;
+            this.lblCompanyAddress.Text = "<Name>";
             // 
             // nightLabel14
             // 
@@ -509,17 +509,17 @@
             this.nightLabel14.TabIndex = 28;
             this.nightLabel14.Text = "Dirección:";
             // 
-            // nightLabel7
+            // lblCompanyName
             // 
-            this.nightLabel7.AutoSize = true;
-            this.nightLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel7.Location = new System.Drawing.Point(92, 11);
-            this.nightLabel7.Name = "nightLabel7";
-            this.nightLabel7.Size = new System.Drawing.Size(69, 20);
-            this.nightLabel7.TabIndex = 27;
-            this.nightLabel7.Text = "<Name>";
+            this.lblCompanyName.AutoSize = true;
+            this.lblCompanyName.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompanyName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCompanyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.lblCompanyName.Location = new System.Drawing.Point(92, 11);
+            this.lblCompanyName.Name = "lblCompanyName";
+            this.lblCompanyName.Size = new System.Drawing.Size(69, 20);
+            this.lblCompanyName.TabIndex = 27;
+            this.lblCompanyName.Text = "<Name>";
             // 
             // nightLabel4
             // 
@@ -536,7 +536,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(200)))));
-            this.panel6.Controls.Add(this.nightLabel3);
+            this.panel6.Controls.Add(this.lblIinicio);
             this.panel6.Controls.Add(this.nightLabel5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 142);
@@ -544,17 +544,17 @@
             this.panel6.Size = new System.Drawing.Size(311, 32);
             this.panel6.TabIndex = 4;
             // 
-            // nightLabel3
+            // lblIinicio
             // 
-            this.nightLabel3.AutoSize = true;
-            this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel3.ForeColor = System.Drawing.Color.White;
-            this.nightLabel3.Location = new System.Drawing.Point(152, 5);
-            this.nightLabel3.Name = "nightLabel3";
-            this.nightLabel3.Size = new System.Drawing.Size(73, 20);
-            this.nightLabel3.TabIndex = 33;
-            this.nightLabel3.Text = "<Name>";
+            this.lblIinicio.AutoSize = true;
+            this.lblIinicio.BackColor = System.Drawing.Color.Transparent;
+            this.lblIinicio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIinicio.ForeColor = System.Drawing.Color.White;
+            this.lblIinicio.Location = new System.Drawing.Point(152, 5);
+            this.lblIinicio.Name = "lblIinicio";
+            this.lblIinicio.Size = new System.Drawing.Size(73, 20);
+            this.lblIinicio.TabIndex = 33;
+            this.lblIinicio.Text = "<Name>";
             // 
             // nightLabel5
             // 
@@ -629,6 +629,7 @@
             this.btnExport.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.btnExport.TabIndex = 38;
             this.btnExport.Text = "Exportar";
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnAdd
             // 
@@ -652,6 +653,7 @@
             this.btnAdd.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.btnAdd.TabIndex = 36;
             this.btnAdd.Text = "Agregar";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
@@ -681,7 +683,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 179);
+            this.pictureBox1.Size = new System.Drawing.Size(168, 179);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
@@ -737,37 +739,37 @@
         private ReaLTaiizor.Controls.NightButton btnExport;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel7;
-        private ReaLTaiizor.Controls.NightLabel nightLabel6;
+        private ReaLTaiizor.Controls.NightLabel lblFin;
         private ReaLTaiizor.Controls.NightLabel nightLabel8;
         private Panel panel4;
         private Panel panel5;
-        private ReaLTaiizor.Controls.NightLabel nightLabel17;
+        private ReaLTaiizor.Controls.NightLabel lblClientPhone;
         private ReaLTaiizor.Controls.NightLabel nightLabel18;
-        private ReaLTaiizor.Controls.NightLabel nightLabel19;
+        private ReaLTaiizor.Controls.NightLabel lblClientAdress;
         private ReaLTaiizor.Controls.NightLabel nightLabel20;
-        private ReaLTaiizor.Controls.NightLabel nightLabel21;
+        private ReaLTaiizor.Controls.NightLabel lblClientName;
         private ReaLTaiizor.Controls.NightLabel nightLabel22;
         private Panel panel3;
         private ReaLTaiizor.Controls.NightLabel nightLabel2;
         private Panel panel2;
         private ReaLTaiizor.Controls.NightLabel nightLabel1;
         private Panel panel1;
-        private ReaLTaiizor.Controls.NightLabel nightLabel15;
+        private ReaLTaiizor.Controls.NightLabel lblCompanyPhone;
         private ReaLTaiizor.Controls.NightLabel nightLabel16;
-        private ReaLTaiizor.Controls.NightLabel nightLabel13;
+        private ReaLTaiizor.Controls.NightLabel lblCompanyAddress;
         private ReaLTaiizor.Controls.NightLabel nightLabel14;
-        private ReaLTaiizor.Controls.NightLabel nightLabel7;
+        private ReaLTaiizor.Controls.NightLabel lblCompanyName;
         private ReaLTaiizor.Controls.NightLabel nightLabel4;
         private Panel panel6;
-        private ReaLTaiizor.Controls.NightLabel nightLabel3;
+        private ReaLTaiizor.Controls.NightLabel lblIinicio;
         private ReaLTaiizor.Controls.NightLabel nightLabel5;
         private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel9;
-        private ReaLTaiizor.Controls.NightLabel nightLabel11;
+        private ReaLTaiizor.Controls.NightLabel lblTotalExpense;
         private ReaLTaiizor.Controls.NightLabel nightLabel12;
         private Panel panel8;
-        private ReaLTaiizor.Controls.NightLabel nightLabel9;
+        private ReaLTaiizor.Controls.NightLabel lblIrr;
         private ReaLTaiizor.Controls.NightLabel nightLabel10;
     }
 }

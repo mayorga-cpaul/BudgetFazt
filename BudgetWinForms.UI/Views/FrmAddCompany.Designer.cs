@@ -30,11 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddCompany));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.nightLabel3 = new ReaLTaiizor.Controls.NightLabel();
+            this.txtAddress = new RJCodeAdvance.RJControls.RJTextBox();
+            this.nightLabel2 = new ReaLTaiizor.Controls.NightLabel();
+            this.txtPhone = new RJCodeAdvance.RJControls.RJTextBox();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel4 = new ReaLTaiizor.Controls.NightLabel();
             this.btnAddCompany = new ReaLTaiizor.Controls.NightButton();
-            this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtEmail = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtDescription = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtCompanyName = new RJCodeAdvance.RJControls.RJTextBox();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.airForm1.SuspendLayout();
@@ -46,11 +50,15 @@
             // 
             this.airForm1.BackColor = System.Drawing.Color.White;
             this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.airForm1.Controls.Add(this.nightLabel3);
+            this.airForm1.Controls.Add(this.txtAddress);
+            this.airForm1.Controls.Add(this.nightLabel2);
+            this.airForm1.Controls.Add(this.txtPhone);
             this.airForm1.Controls.Add(this.nightLabel1);
             this.airForm1.Controls.Add(this.nightLabel4);
             this.airForm1.Controls.Add(this.btnAddCompany);
-            this.airForm1.Controls.Add(this.rjTextBox1);
-            this.airForm1.Controls.Add(this.txtEmail);
+            this.airForm1.Controls.Add(this.txtDescription);
+            this.airForm1.Controls.Add(this.txtCompanyName);
             this.airForm1.Controls.Add(this.panelButtons);
             this.airForm1.Customization = "AAAA/1paWv9ycnL/";
             this.airForm1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -70,6 +78,86 @@
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
             // 
+            // nightLabel3
+            // 
+            this.nightLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel3.AutoSize = true;
+            this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel3.Location = new System.Drawing.Point(64, 267);
+            this.nightLabel3.Name = "nightLabel3";
+            this.nightLabel3.Size = new System.Drawing.Size(72, 20);
+            this.nightLabel3.TabIndex = 23;
+            this.nightLabel3.Text = "Dirección";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAddress.AutoSize = true;
+            this.txtAddress.BackColor = System.Drawing.SystemColors.Window;
+            this.txtAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtAddress.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtAddress.BorderRadius = 15;
+            this.txtAddress.BorderSize = 2;
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtAddress.Location = new System.Drawing.Point(50, 291);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Multiline = false;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAddress.PasswordChar = false;
+            this.txtAddress.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtAddress.PlaceholderText = "Dirección";
+            this.txtAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtAddress.Size = new System.Drawing.Size(372, 35);
+            this.txtAddress.TabIndex = 22;
+            this.txtAddress.Texts = "";
+            this.txtAddress.UnderlinedStyle = false;
+            // 
+            // nightLabel2
+            // 
+            this.nightLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel2.AutoSize = true;
+            this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel2.Location = new System.Drawing.Point(64, 205);
+            this.nightLabel2.Name = "nightLabel2";
+            this.nightLabel2.Size = new System.Drawing.Size(67, 20);
+            this.nightLabel2.TabIndex = 21;
+            this.nightLabel2.Text = "Teléfono";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhone.AutoSize = true;
+            this.txtPhone.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtPhone.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtPhone.BorderRadius = 15;
+            this.txtPhone.BorderSize = 2;
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtPhone.Location = new System.Drawing.Point(50, 229);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhone.Multiline = false;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPhone.PasswordChar = false;
+            this.txtPhone.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtPhone.PlaceholderText = "Teléfono";
+            this.txtPhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPhone.Size = new System.Drawing.Size(372, 35);
+            this.txtPhone.TabIndex = 20;
+            this.txtPhone.Texts = "";
+            this.txtPhone.UnderlinedStyle = false;
+            // 
             // nightLabel1
             // 
             this.nightLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -78,7 +166,7 @@
             this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel1.Location = new System.Drawing.Point(60, 185);
+            this.nightLabel1.Location = new System.Drawing.Point(64, 140);
             this.nightLabel1.Name = "nightLabel1";
             this.nightLabel1.Size = new System.Drawing.Size(87, 20);
             this.nightLabel1.TabIndex = 19;
@@ -92,7 +180,7 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel4.Location = new System.Drawing.Point(60, 122);
+            this.nightLabel4.Location = new System.Drawing.Point(64, 77);
             this.nightLabel4.Name = "nightLabel4";
             this.nightLabel4.Size = new System.Drawing.Size(155, 20);
             this.nightLabel4.TabIndex = 18;
@@ -122,57 +210,57 @@
             this.btnAddCompany.Text = "Crear compañia";
             this.btnAddCompany.Click += new System.EventHandler(this.btnAddCompany_Click);
             // 
-            // rjTextBox1
+            // txtDescription
             // 
-            this.rjTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjTextBox1.AutoSize = true;
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.BorderRadius = 15;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(46, 209);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.PlaceholderText = "Descripción";
-            this.rjTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rjTextBox1.Size = new System.Drawing.Size(372, 35);
-            this.rjTextBox1.TabIndex = 16;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.txtDescription.AutoSize = true;
+            this.txtDescription.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtDescription.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtDescription.BorderRadius = 15;
+            this.txtDescription.BorderSize = 2;
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtDescription.Location = new System.Drawing.Point(50, 164);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescription.Multiline = false;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescription.PasswordChar = false;
+            this.txtDescription.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtDescription.PlaceholderText = "Descripción";
+            this.txtDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDescription.Size = new System.Drawing.Size(372, 35);
+            this.txtDescription.TabIndex = 16;
+            this.txtDescription.Texts = "";
+            this.txtDescription.UnderlinedStyle = false;
             // 
-            // txtEmail
+            // txtCompanyName
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCompanyName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.AutoSize = true;
-            this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.txtEmail.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.txtEmail.BorderRadius = 15;
-            this.txtEmail.BorderSize = 2;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.txtEmail.Location = new System.Drawing.Point(46, 146);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Multiline = false;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEmail.PasswordChar = false;
-            this.txtEmail.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txtEmail.PlaceholderText = "Nombre de compañia";
-            this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtEmail.Size = new System.Drawing.Size(372, 35);
-            this.txtEmail.TabIndex = 15;
-            this.txtEmail.Texts = "";
-            this.txtEmail.UnderlinedStyle = false;
+            this.txtCompanyName.AutoSize = true;
+            this.txtCompanyName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCompanyName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtCompanyName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtCompanyName.BorderRadius = 15;
+            this.txtCompanyName.BorderSize = 2;
+            this.txtCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCompanyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtCompanyName.Location = new System.Drawing.Point(50, 101);
+            this.txtCompanyName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCompanyName.Multiline = false;
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCompanyName.PasswordChar = false;
+            this.txtCompanyName.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtCompanyName.PlaceholderText = "Nombre de compañia";
+            this.txtCompanyName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCompanyName.Size = new System.Drawing.Size(372, 35);
+            this.txtCompanyName.TabIndex = 15;
+            this.txtCompanyName.Texts = "";
+            this.txtCompanyName.UnderlinedStyle = false;
             // 
             // panelButtons
             // 
@@ -222,10 +310,14 @@
         private ReaLTaiizor.Forms.AirForm airForm1;
         private Panel panelButtons;
         private PictureBox pictureBox2;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
-        private RJCodeAdvance.RJControls.RJTextBox txtEmail;
+        private RJCodeAdvance.RJControls.RJTextBox txtDescription;
+        private RJCodeAdvance.RJControls.RJTextBox txtCompanyName;
         private ReaLTaiizor.Controls.NightButton btnAddCompany;
         private ReaLTaiizor.Controls.NightLabel nightLabel1;
         private ReaLTaiizor.Controls.NightLabel nightLabel4;
+        private ReaLTaiizor.Controls.NightLabel nightLabel2;
+        private RJCodeAdvance.RJControls.RJTextBox txtPhone;
+        private ReaLTaiizor.Controls.NightLabel nightLabel3;
+        private RJCodeAdvance.RJControls.RJTextBox txtAddress;
     }
 }

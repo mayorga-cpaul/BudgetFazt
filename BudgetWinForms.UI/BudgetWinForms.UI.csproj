@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Easy.ExportToExcel" Version="1.0.6" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-rc.2.22472.3" />
     <PackageReference Include="ReaLTaiizor" Version="3.7.8.8" />
     <PackageReference Include="RJCodeAdvance.RJControls" Version="1.0.0" />
@@ -16,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BudgetFazt.Infraestructure\BudgetFazt.Infraestructure.csproj" />
+    <ProjectReference Include="..\BudgetFazt.Util\BudgetFazt.Util.csproj" />
   </ItemGroup>
 
   <ItemGroup>

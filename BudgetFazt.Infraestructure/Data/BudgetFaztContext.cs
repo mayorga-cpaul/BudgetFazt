@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using BudgetFazt.Infraestructure.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BudgetFazt.Infraestructure.Data;
 
@@ -27,13 +28,13 @@ public partial class BudgetFaztContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlite(connectionString: "Filename="+"BudgetFazt.db", sqliteOptionsAction: op =>
-        {
-            op.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName);
-        });
-    }
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //{
+    //    optionsBuilder.UseSqlite(connectionString: "Filename=" + "BudgetFazt.db", sqliteOptionsAction: op =>
+    //    {
+    //        op.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName);
+    //    });
+    //}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -47,6 +48,7 @@ public partial class BudgetFaztContext : DbContext
             entity.Property(e => e.Name);
             entity.Property(e => e.Quantity);
             entity.Property(e => e.UnitPrice);
+            entity.Property(e => e.Quality);
 
             entity.HasOne(d => d.Project).WithMany(p => p.Article).HasForeignKey(d => d.ProjectId);
         });
@@ -58,6 +60,8 @@ public partial class BudgetFaztContext : DbContext
             entity.Property(e => e.Id);
             entity.Property(e => e.CompanyName);
             entity.Property(e => e.Description);
+            entity.Property(e => e.Address);
+            entity.Property(e => e.Phone);
 
             entity.HasOne(d => d.User).WithMany(p => p.Company).HasForeignKey(d => d.UserId);
         });
@@ -75,6 +79,8 @@ public partial class BudgetFaztContext : DbContext
             entity.HasOne(d => d.Project).WithOne(p => p.Customer)
                 .HasForeignKey<Customer>(d => d.Id)
                 .OnDelete(DeleteBehavior.ClientSetNull);
+
+            entity.HasOne(d => d.Company).WithMany(e => e.Customer).HasForeignKey(f => f.CompanyId);
         });
 
         modelBuilder.Entity<Project>(entity =>

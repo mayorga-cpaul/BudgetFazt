@@ -1,4 +1,6 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Infraestructure.Models;
+using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
 using System.Runtime.InteropServices;
 
@@ -14,8 +16,18 @@ namespace BudgetWinForms.UI.Views
             this.userRepository = userRepository;
         }
 
-        private void btnAcessRequest_Click(object sender, EventArgs e)
+        private async void btnAcessRequest_Click(object sender, EventArgs e)
         {
+            User user = new User()
+            {
+                Name = txtName.Texts,
+                Email = txtEmail.Texts,
+                Password = txtPassword.Texts,
+            };
+
+            await userRepository.CreateAsync(user);
+            DataOnMemory.UserId = await userRepository.LastCretedIndex();
+            
             SingletonForms.GetForm(FormType.FrmCompanies).Show();
             this.Hide();
         }

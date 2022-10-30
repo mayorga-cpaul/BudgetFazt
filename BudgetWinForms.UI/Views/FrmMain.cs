@@ -37,19 +37,9 @@ namespace BudgetWinForms.UI.Views
             fh.Show();
         }
 
-        private void btnAddProject_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmAddCustomer));
-        }
-
         private void FrmMain_Load(object sender, EventArgs e)
         {
             AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmStart));
-        }
-
-        private void BtnBudget_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmAddCustomer));
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

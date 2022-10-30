@@ -1,4 +1,5 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
 using BudgetWinForms.UI.UControl;
 
@@ -24,19 +25,27 @@ namespace BudgetWinForms.UI.Views
             this.customerRepository = customerRepository;
         }
 
-        private void FrmStart_Load(object sender, EventArgs e)
+        private async void FrmStart_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 50; i++)
+            await Charge();
+        }
+
+        private async Task Charge()
+        {
+            var result = await projectRepository.GetAllProjects(DataOnMemory.CompanyId);
+
+            foreach (var item in result)
             {
-                UCAddBudget uCAddBudget = new UCAddBudget(articleRepository);
+                UCAddBudget uCAddBudget = new UCAddBudget(articleRepository, projectRepository,customerRepository,companyRepository, item.Id);
                 flowLayoutPanel1.Controls.Add(uCAddBudget);
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private async void btnAdd_Click(object sender, EventArgs e)
         {
             SingletonForms.GetForm(FormType.FrmAddProject).Show();
             SingletonForms.GetForm(FormType.FrmMain).Hide();
+            await Charge();
 
         }
     }

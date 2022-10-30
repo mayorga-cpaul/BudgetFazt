@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnAddProject = new System.Windows.Forms.PictureBox();
             this.BtnBudget = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -41,7 +40,6 @@
             this.airForm1.SuspendLayout();
             this.panelButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddProject)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBudget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -86,7 +84,6 @@
             // 
             this.panelButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panelButtons.Controls.Add(this.pictureBox5);
-            this.panelButtons.Controls.Add(this.btnAddProject);
             this.panelButtons.Controls.Add(this.BtnBudget);
             this.panelButtons.Controls.Add(this.btnClose);
             this.panelButtons.Controls.Add(this.pictureBox4);
@@ -108,18 +105,6 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // btnAddProject
-            // 
-            this.btnAddProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAddProject.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProject.Image")));
-            this.btnAddProject.Location = new System.Drawing.Point(17, 383);
-            this.btnAddProject.Name = "btnAddProject";
-            this.btnAddProject.Size = new System.Drawing.Size(36, 41);
-            this.btnAddProject.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAddProject.TabIndex = 4;
-            this.btnAddProject.TabStop = false;
-            this.btnAddProject.Click += new System.EventHandler(this.btnAddProject_Click);
-            // 
             // BtnBudget
             // 
             this.BtnBudget.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -130,7 +115,6 @@
             this.BtnBudget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnBudget.TabIndex = 3;
             this.BtnBudget.TabStop = false;
-            this.BtnBudget.Click += new System.EventHandler(this.BtnBudget_Click);
             // 
             // btnClose
             // 
@@ -182,7 +166,6 @@
             this.airForm1.ResumeLayout(false);
             this.panelButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddProject)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBudget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -198,7 +181,6 @@
         private PictureBox btnClose;
         private PictureBox pictureBox4;
         private PictureBox pictureBox1;
-        private PictureBox btnAddProject;
         private PictureBox BtnBudget;
         private PictureBox pictureBox5;
         private Panel panel1;

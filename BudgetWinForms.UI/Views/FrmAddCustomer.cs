@@ -1,4 +1,7 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Infraestructure.Models;
+using BudgetFazt.Util.Caché;
+using BudgetWinForms.UI.Settings;
 
 namespace BudgetWinForms.UI.Views
 {
@@ -23,12 +26,19 @@ namespace BudgetWinForms.UI.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            CustomerOnMemory.Name = txtName.Texts;
+            CustomerOnMemory.Email = txtEmail.Texts;
+            CustomerOnMemory.Phone = txtPhone.Texts;
+            CustomerOnMemory.Address = txtAddress.Texts;
 
+            SingletonForms.GetForm(FormType.FrmAddProject).Show();
+            SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
         }
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            SingletonForms.GetForm(FormType.FrmAddProject).Show();
+            SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
         }
     }
 }

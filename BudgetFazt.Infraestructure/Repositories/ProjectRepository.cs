@@ -1,6 +1,7 @@
 ﻿using BudgetFazt.Infraestructure.Data;
 using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Models;
+using Microsoft.EntityFrameworkCore;
 using SmartSolution.Infraestructure.Data.Repositories;
 
 namespace BudgetFazt.Infraestructure.Repositories
@@ -13,9 +14,19 @@ namespace BudgetFazt.Infraestructure.Repositories
             this.repository = repository;
         }
 
+        public async Task<IEnumerable<Project>> GetAllProjects(int companyId)
+        {
+            return await Task.FromResult(repository.Projects.Where(e => e.CompanyId == companyId));
+        }
+
         public Task<bool> SetCustomer(Customer article)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<int> LastCretedIndex()
+        {
+            return await repository.Users.MaxAsync(e => e.Id);
         }
     }
 }
