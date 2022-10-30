@@ -12,5 +12,10 @@ namespace BudgetFazt.Infraestructure.Repositories
         {
             this.repository = repository;
         }
+
+        public Task<bool> SetCustomer(Customer article)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

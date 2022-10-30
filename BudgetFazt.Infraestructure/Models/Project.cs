@@ -5,19 +5,23 @@ namespace BudgetFazt.Infraestructure.Models;
 
 public partial class Project
 {
-    public long Id { get; set; }
-
+    public Project()
+    {
+        Article = new HashSet<Article>();
+    }
+    public int Id { get; set; }
+    public int CompanyId { get; set; }
     public string NameProject { get; set; } = null!;
 
     public string Description { get; set; } = null!;
 
-    public string StartDate { get; set; } = null!;
+    public DateTime StartDate { get; set; }
 
-    public string EndDate { get; set; } = null!;
+    public DateTime EndDate { get; set; }
 
-    public virtual Article? Article { get; set; }
+    public virtual ICollection<Article> Article { get; set; }
 
     public virtual Customer? Customer { get; set; }
 
-    public virtual Company IdNavigation { get; set; } = null!;
+    public virtual Company Company { get; set; } = null!;
 }

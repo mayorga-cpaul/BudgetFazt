@@ -83,7 +83,7 @@
             this.airForm1.Sizable = true;
             this.airForm1.Size = new System.Drawing.Size(808, 481);
             this.airForm1.SmartBounds = true;
-            this.airForm1.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.airForm1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.airForm1.TabIndex = 0;
             this.airForm1.Text = "airForm1";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
@@ -169,6 +169,7 @@
             this.btnNewUser.TabStop = true;
             this.btnNewUser.Text = "Registrarse";
             this.btnNewUser.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.btnNewUser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnNewUser_LinkClicked);
             // 
             // txtPassword
             // 
@@ -462,6 +463,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(808, 481);
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.ResumeLayout(false);

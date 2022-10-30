@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace BudgetFazt.Infraestructure.Models;
+﻿namespace BudgetFazt.Infraestructure.Models;
 
 public partial class User
 {
-    public long Id { get; set; }
+    public User()
+    {
+        Company = new HashSet<Company>();
+    }
+    public int Id { get; set; }
 
     public string? Name { get; set; }
 
@@ -13,5 +14,5 @@ public partial class User
 
     public string? Password { get; set; }
 
-    public virtual Company? Company { get; set; }
+    public virtual ICollection<Company> Company { get; set; }
 }

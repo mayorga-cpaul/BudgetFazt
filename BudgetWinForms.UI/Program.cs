@@ -2,6 +2,7 @@ using BudgetFazt.Infraestructure;
 using BudgetFazt.Infraestructure.Data;
 using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Repositories;
+using BudgetWinForms.UI.Settings;
 using BudgetWinForms.UI.Views;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,6 +18,7 @@ namespace BudgetWinForms.UI
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
             var services = new ServiceCollection();
 
             string connection = DbSqlite.GetConnection();
@@ -28,11 +30,7 @@ namespace BudgetWinForms.UI
 
             services.AddSqlite<BudgetFaztContext>(connection);
 
-            services.AddSingleton<IUserRepository, UserRepository>();
-            services.AddSingleton<ICompanyRepository, CompanyRepository>();
-            services.AddSingleton<ICustomerRepository, CustomerRepository>();
-            services.AddSingleton<IProjectRepository, ProjectRepository>();
-            services.AddSingleton<IArticleRepository, ArticleRepository>();
+            SingletonForms.GetInstances(services);
 
             services.AddSingleton<FrmLogin>();
 
@@ -40,6 +38,7 @@ namespace BudgetWinForms.UI
 
             using (var serivceScope = services.BuildServiceProvider())
             {
+                ServicesReq.ServiceProvider = serivceScope;
                 var main = serivceScope.GetRequiredService<FrmLogin>();
                 Application.Run(main);
             }

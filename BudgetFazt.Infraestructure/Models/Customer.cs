@@ -5,7 +5,7 @@ namespace BudgetFazt.Infraestructure.Models;
 
 public partial class Customer
 {
-    public long Id { get; set; }
+    public int Id { get; set; }
 
     public string Name { get; set; } = null!;
 
@@ -15,5 +15,5 @@ public partial class Customer
 
     public string Address { get; set; } = null!;
 
-    public virtual Project IdNavigation { get; set; } = null!;
+    public virtual Project Project { get; set; } = null!;
 }

@@ -30,21 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddCompany));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
-            this.panelButtons = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtEmail = new RJCodeAdvance.RJControls.RJTextBox();
-            this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnAddCompany = new ReaLTaiizor.Controls.NightButton();
-            this.nightLabel4 = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
+            this.nightLabel4 = new ReaLTaiizor.Controls.NightLabel();
+            this.btnAddCompany = new ReaLTaiizor.Controls.NightButton();
+            this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtEmail = new RJCodeAdvance.RJControls.RJTextBox();
+            this.panelButtons = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.airForm1.SuspendLayout();
             this.panelButtons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,74 +64,94 @@
             this.airForm1.Sizable = true;
             this.airForm1.Size = new System.Drawing.Size(808, 481);
             this.airForm1.SmartBounds = true;
-            this.airForm1.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.airForm1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.airForm1.TabIndex = 0;
             this.airForm1.Text = "airForm1";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
             // 
-            // panelButtons
+            // nightLabel1
             // 
-            this.panelButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.panelButtons.Controls.Add(this.pictureBox2);
-            this.panelButtons.Controls.Add(this.btnClose);
-            this.panelButtons.Controls.Add(this.pictureBox4);
-            this.panelButtons.Controls.Add(this.pictureBox1);
-            this.panelButtons.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelButtons.Location = new System.Drawing.Point(0, 0);
-            this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(808, 51);
-            this.panelButtons.TabIndex = 3;
-            this.panelButtons.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelButtons_MouseDown);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(1365, -22);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(48, 42);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 2;
-            this.btnClose.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1964, -47);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 42);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nightLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2493, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 0);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.nightLabel1.AutoSize = true;
+            this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel1.Location = new System.Drawing.Point(60, 185);
+            this.nightLabel1.Name = "nightLabel1";
+            this.nightLabel1.Size = new System.Drawing.Size(87, 20);
+            this.nightLabel1.TabIndex = 19;
+            this.nightLabel1.Text = "Descripción";
             // 
-            // pictureBox2
+            // nightLabel4
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(757, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 42);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.nightLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightLabel4.AutoSize = true;
+            this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel4.Location = new System.Drawing.Point(60, 122);
+            this.nightLabel4.Name = "nightLabel4";
+            this.nightLabel4.Size = new System.Drawing.Size(155, 20);
+            this.nightLabel4.TabIndex = 18;
+            this.nightLabel4.Text = "Nombre de compañia";
+            // 
+            // btnAddCompany
+            // 
+            this.btnAddCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddCompany.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddCompany.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddCompany.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddCompany.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.btnAddCompany.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.btnAddCompany.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.btnAddCompany.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            this.btnAddCompany.Location = new System.Drawing.Point(532, 396);
+            this.btnAddCompany.MinimumSize = new System.Drawing.Size(144, 47);
+            this.btnAddCompany.Name = "btnAddCompany";
+            this.btnAddCompany.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.btnAddCompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.btnAddCompany.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.btnAddCompany.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.btnAddCompany.Radius = 20;
+            this.btnAddCompany.Size = new System.Drawing.Size(240, 54);
+            this.btnAddCompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.btnAddCompany.TabIndex = 17;
+            this.btnAddCompany.Text = "Crear compañia";
+            this.btnAddCompany.Click += new System.EventHandler(this.btnAddCompany_Click);
+            // 
+            // rjTextBox1
+            // 
+            this.rjTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjTextBox1.AutoSize = true;
+            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.rjTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.rjTextBox1.BorderRadius = 15;
+            this.rjTextBox1.BorderSize = 2;
+            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.rjTextBox1.Location = new System.Drawing.Point(46, 209);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox1.Multiline = false;
+            this.rjTextBox1.Name = "rjTextBox1";
+            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox1.PasswordChar = false;
+            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rjTextBox1.PlaceholderText = "Descripción";
+            this.rjTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rjTextBox1.Size = new System.Drawing.Size(372, 35);
+            this.rjTextBox1.TabIndex = 16;
+            this.rjTextBox1.Texts = "";
+            this.rjTextBox1.UnderlinedStyle = false;
             // 
             // txtEmail
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.AutoSize = true;
             this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
             this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
@@ -160,79 +174,28 @@
             this.txtEmail.Texts = "";
             this.txtEmail.UnderlinedStyle = false;
             // 
-            // rjTextBox1
+            // panelButtons
             // 
-            this.rjTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjTextBox1.AutoSize = true;
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.BorderRadius = 15;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(46, 226);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.rjTextBox1.PlaceholderText = "Descripción";
-            this.rjTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rjTextBox1.Size = new System.Drawing.Size(372, 35);
-            this.rjTextBox1.TabIndex = 16;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.panelButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.panelButtons.Controls.Add(this.pictureBox2);
+            this.panelButtons.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelButtons.Location = new System.Drawing.Point(0, 0);
+            this.panelButtons.Name = "panelButtons";
+            this.panelButtons.Size = new System.Drawing.Size(808, 51);
+            this.panelButtons.TabIndex = 3;
+            this.panelButtons.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelButtons_MouseDown);
             // 
-            // btnAddCompany
+            // pictureBox2
             // 
-            this.btnAddCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddCompany.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddCompany.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddCompany.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddCompany.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.btnAddCompany.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.btnAddCompany.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.btnAddCompany.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnAddCompany.Location = new System.Drawing.Point(532, 396);
-            this.btnAddCompany.MinimumSize = new System.Drawing.Size(144, 47);
-            this.btnAddCompany.Name = "btnAddCompany";
-            this.btnAddCompany.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.btnAddCompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.btnAddCompany.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.btnAddCompany.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.btnAddCompany.Radius = 20;
-            this.btnAddCompany.Size = new System.Drawing.Size(240, 54);
-            this.btnAddCompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.btnAddCompany.TabIndex = 17;
-            this.btnAddCompany.Text = "Crear compañia";
-            // 
-            // nightLabel4
-            // 
-            this.nightLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightLabel4.AutoSize = true;
-            this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel4.Location = new System.Drawing.Point(60, 122);
-            this.nightLabel4.Name = "nightLabel4";
-            this.nightLabel4.Size = new System.Drawing.Size(155, 20);
-            this.nightLabel4.TabIndex = 18;
-            this.nightLabel4.Text = "Nombre de compañia";
-            // 
-            // nightLabel1
-            // 
-            this.nightLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightLabel1.AutoSize = true;
-            this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel1.Location = new System.Drawing.Point(60, 202);
-            this.nightLabel1.Name = "nightLabel1";
-            this.nightLabel1.Size = new System.Drawing.Size(87, 20);
-            this.nightLabel1.TabIndex = 19;
-            this.nightLabel1.Text = "Descripción";
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(757, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FrmAddCompany
             // 
@@ -241,15 +204,14 @@
             this.ClientSize = new System.Drawing.Size(808, 481);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(808, 481);
             this.Name = "FrmAddCompany";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAddCompany";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.ResumeLayout(false);
             this.airForm1.PerformLayout();
             this.panelButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -259,9 +221,6 @@
 
         private ReaLTaiizor.Forms.AirForm airForm1;
         private Panel panelButtons;
-        private PictureBox btnClose;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
         private RJCodeAdvance.RJControls.RJTextBox txtEmail;

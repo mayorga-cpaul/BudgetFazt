@@ -12,5 +12,15 @@ namespace BudgetFazt.Infraestructure.Repositories
         {
             this.repository = repository;
         }
+
+        public Task<IEnumerable<Project>> GetAllArticles(int companyId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> SetProject(Project article)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

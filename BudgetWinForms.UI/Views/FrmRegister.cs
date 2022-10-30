@@ -1,17 +1,29 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
 using BudgetWinForms.UI.Settings;
-using System.Runtime.InteropServices; 
+using System.Runtime.InteropServices;
 
 namespace BudgetWinForms.UI.Views
 {
-    public partial class FrmAddCompany : Form
+    public partial class FrmRegister : Form
     {
-        private readonly ICompanyRepository companyRepositor;
+        private readonly IUserRepository userRepository;
 
-        public FrmAddCompany(ICompanyRepository companyRepositor)
+        public FrmRegister(IUserRepository userRepository)
         {
             InitializeComponent();
-            this.companyRepositor = companyRepositor;
+            this.userRepository = userRepository;
+        }
+
+        private void btnAcessRequest_Click(object sender, EventArgs e)
+        {
+            SingletonForms.GetForm(FormType.FrmCompanies).Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            SingletonForms.GetForm(FormType.FrmLogin).Show();
+            this.Hide();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -24,18 +36,6 @@ namespace BudgetWinForms.UI.Views
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void btnAddCompany_Click(object sender, EventArgs e)
-        {
-            SingletonForms.GetForm(FormType.FrmMain).Show();
-            this.Hide();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            SingletonForms.GetForm(FormType.FrmCompanies).Show();
-            this.Hide();
         }
     }
 }
