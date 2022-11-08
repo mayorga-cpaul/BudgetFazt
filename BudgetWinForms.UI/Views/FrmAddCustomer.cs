@@ -1,6 +1,7 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
+using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
 
 namespace BudgetWinForms.UI.Views
@@ -26,18 +27,27 @@ namespace BudgetWinForms.UI.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            CustomerOnMemory.Name = txtName.Texts;
-            CustomerOnMemory.Email = txtEmail.Texts;
-            CustomerOnMemory.Phone = txtPhone.Texts;
-            CustomerOnMemory.Address = txtAddress.Texts;
+            try
+            {
+                ErrorMessage.ValidateStringEmpty(txtName.Texts);
+                ErrorMessage.ValidateStringEmpty(txtEmail.Texts);
+                ErrorMessage.ValidateStringEmpty(txtPhone.Texts);
+                ErrorMessage.ValidateStringEmpty(txtAddress.Texts);
 
-            SingletonForms.GetForm(FormType.FrmAddProject).Show();
-            SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
+                CustomerOnMemory.Name = txtName.Texts;
+                CustomerOnMemory.Email = txtEmail.Texts;
+                CustomerOnMemory.Phone = txtPhone.Texts;
+                CustomerOnMemory.Address = txtAddress.Texts;
+                SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmAddProject).Show();
             SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
         }
     }

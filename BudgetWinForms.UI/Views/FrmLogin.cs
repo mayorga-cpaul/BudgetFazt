@@ -7,6 +7,7 @@ namespace BudgetWinForms.UI.Views
 {
     public partial class FrmLogin : Form
     {
+        // Esto es el repostorio se ocupará en este formulario
         private readonly IUserRepository userRepository;
         private readonly ICompanyRepository companyRepository;
         private readonly IArticleRepository articleRepository;
@@ -18,6 +19,7 @@ namespace BudgetWinForms.UI.Views
             ICustomerRepository customerRepository)
         {
             InitializeComponent();
+
             this.userRepository = userRepository;
             this.companyRepository = companyRepository;
             this.articleRepository = articleRepository;
@@ -47,23 +49,42 @@ namespace BudgetWinForms.UI.Views
 
         private async void btnAcessRequest_Click(object sender, EventArgs e)
         {
-            if (await userRepository.AccessToAppAsync(txtEmail.Texts, txtPassword.Texts))
+            try
             {
-                var user = await userRepository.GetByEmailPassword(txtEmail.Texts, txtPassword.Texts);
-                DataOnMemory.UserId = user.Id;
-                SingletonForms.GetForm(FormType.FrmCompanies).Show();
-                SingletonForms.GetForm(FormType.FrmLogin).Hide();
-
-            }else
-            {
-                MessageBox.Show("Error al iniciar sesión, verifica tu contraseña", "Error");
+                if (await userRepository.ExistOnDb(txtEmail.Texts))
+                {
+                    if (await userRepository.AccessToAppAsync(txtEmail.Texts, txtPassword.Texts))
+                    {
+                        var user = await userRepository.GetByEmailPassword(txtEmail.Texts, txtPassword.Texts);
+                        DataOnMemory.UserId = user.Id;
+                        SingletonForms.GetForm(FormType.FrmCompanies).Show();
+                        SingletonForms.GetForm(FormType.FrmLogin).Hide();
+                    }else
+                    {
+                        throw new Exception("Contraseña incorrecta");
+                    }
+                }
+                else
+                {
+                    throw new Exception($"Este email: {txtEmail.Texts} no se ha registrado en el sistema");
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnNewUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SingletonForms.GetForm(FormType.FrmRegister).Show();
             this.Hide();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            this.MinimumSize = new Size(808, 481);
         }
     }
 }

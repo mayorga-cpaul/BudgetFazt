@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
 using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Data;
 
@@ -89,21 +88,6 @@ namespace SmartSolution.Infraestructure.Data.Repositories
 
                 throw;
             }
-        }
-
-        public async Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> where)
-        {
-            List<TEntity> entities = new List<TEntity>();
-            Func<TEntity, bool> comparator = where.Compile();
-
-            foreach (var item in (await Task.FromResult(_repository.Set<TEntity>())))
-            {
-                if (comparator(item))
-                {
-                    entities.Add(item);
-                }
-            }
-            return entities;
         }
     }
 }

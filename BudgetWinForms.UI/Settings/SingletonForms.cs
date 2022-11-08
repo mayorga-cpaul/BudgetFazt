@@ -38,11 +38,11 @@ namespace BudgetWinForms.UI.Settings
 
         public static void GetInstances(this ServiceCollection services)
         {
-            services.AddSingleton<IUserRepository, UserRepository>();
-            services.AddSingleton<ICompanyRepository, CompanyRepository>();
-            services.AddSingleton<ICustomerRepository, CustomerRepository>();
-            services.AddSingleton<IProjectRepository, ProjectRepository>();
-            services.AddSingleton<IArticleRepository, ArticleRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ICompanyRepository, CompanyRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<IArticleRepository, ArticleRepository>();
 
             services.AddSingleton<FrmAddCompany>();
             services.AddSingleton<FrmAddCustomer>();

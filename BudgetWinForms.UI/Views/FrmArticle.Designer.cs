@@ -59,13 +59,13 @@
             this.txtDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescription.AutoSize = true;
-            this.txtDescription.BackColor = System.Drawing.Color.White;
+            this.txtDescription.BackColor = System.Drawing.Color.Ivory;
             this.txtDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtDescription.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtDescription.BorderRadius = 15;
             this.txtDescription.BorderSize = 2;
             this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.txtDescription.Location = new System.Drawing.Point(163, 352);
             this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescription.Multiline = false;
@@ -85,13 +85,13 @@
             this.txtQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQuantity.AutoSize = true;
-            this.txtQuantity.BackColor = System.Drawing.Color.White;
+            this.txtQuantity.BackColor = System.Drawing.Color.Ivory;
             this.txtQuantity.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtQuantity.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtQuantity.BorderRadius = 15;
             this.txtQuantity.BorderSize = 2;
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.txtQuantity.Location = new System.Drawing.Point(163, 290);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuantity.Multiline = false;
@@ -105,45 +105,47 @@
             this.txtQuantity.TabIndex = 24;
             this.txtQuantity.Texts = "";
             this.txtQuantity.UnderlinedStyle = false;
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // txtUnitPrice
             // 
             this.txtUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUnitPrice.AutoSize = true;
-            this.txtUnitPrice.BackColor = System.Drawing.Color.White;
+            this.txtUnitPrice.BackColor = System.Drawing.Color.Ivory;
             this.txtUnitPrice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtUnitPrice.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtUnitPrice.BorderRadius = 15;
             this.txtUnitPrice.BorderSize = 2;
             this.txtUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUnitPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtUnitPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.txtUnitPrice.Location = new System.Drawing.Point(163, 220);
             this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtUnitPrice.Multiline = false;
             this.txtUnitPrice.Name = "txtUnitPrice";
             this.txtUnitPrice.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtUnitPrice.PasswordChar = false;
-            this.txtUnitPrice.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtUnitPrice.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(20)))), ((int)(((byte)(0)))));
             this.txtUnitPrice.PlaceholderText = "Precio unitario";
             this.txtUnitPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUnitPrice.Size = new System.Drawing.Size(405, 35);
             this.txtUnitPrice.TabIndex = 23;
             this.txtUnitPrice.Texts = "";
             this.txtUnitPrice.UnderlinedStyle = false;
+            this.txtUnitPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUnitPrice_KeyPress);
             // 
             // txtArticleName
             // 
             this.txtArticleName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArticleName.AutoSize = true;
-            this.txtArticleName.BackColor = System.Drawing.Color.White;
+            this.txtArticleName.BackColor = System.Drawing.Color.Ivory;
             this.txtArticleName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtArticleName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtArticleName.BorderRadius = 15;
             this.txtArticleName.BorderSize = 2;
             this.txtArticleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtArticleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtArticleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.txtArticleName.Location = new System.Drawing.Point(163, 148);
             this.txtArticleName.Margin = new System.Windows.Forms.Padding(4);
             this.txtArticleName.Multiline = false;
@@ -157,6 +159,7 @@
             this.txtArticleName.TabIndex = 22;
             this.txtArticleName.Texts = "";
             this.txtArticleName.UnderlinedStyle = false;
+            this.txtArticleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtArticleName_KeyPress);
             // 
             // btnAdd
             // 
@@ -267,13 +270,13 @@
             this.txtDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescuento.AutoSize = true;
-            this.txtDescuento.BackColor = System.Drawing.Color.White;
+            this.txtDescuento.BackColor = System.Drawing.Color.Ivory;
             this.txtDescuento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtDescuento.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.txtDescuento.BorderRadius = 15;
             this.txtDescuento.BorderSize = 2;
             this.txtDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
+            this.txtDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.txtDescuento.Location = new System.Drawing.Point(163, 476);
             this.txtDescuento.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescuento.Multiline = false;
@@ -360,6 +363,8 @@
             // 
             // cmbQuality
             // 
+            this.cmbQuality.BackColor = System.Drawing.Color.Ivory;
+            this.cmbQuality.ForeColor = System.Drawing.Color.Ivory;
             this.cmbQuality.FormattingEnabled = true;
             this.cmbQuality.ItemHeight = 24;
             this.cmbQuality.Location = new System.Drawing.Point(163, 421);
@@ -386,7 +391,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(718, 658);
             this.Controls.Add(this.nightLabel7);
             this.Controls.Add(this.cmbQuality);

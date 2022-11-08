@@ -8,6 +8,9 @@ namespace BudgetFazt.Infraestructure.Repositories
 {
     public class CompanyRepository : BaseRepository<Company>, ICompanyRepository
     {
+
+        // Metodo importantes de nuestro objeto que hace referencia 
+        // Company 
         private readonly BudgetFaztContext repository;
         public CompanyRepository(BudgetFaztContext repository) : base(repository)
         {

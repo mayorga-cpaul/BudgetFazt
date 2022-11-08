@@ -8,9 +8,10 @@ namespace BudgetFazt.Util.Processes
         {
             List<Budget> budgetList = new List<Budget>();
             double sum = 0;
+
             foreach (var item in budgets)
             {
-                sum += Math.Round((item.UnitPrice - item.Discount / 100)*item.Quantity, 2);
+                sum += Math.Round((item.UnitPrice - item.UnitPrice * item.Discount / 100)*item.Quantity, 2);
 
                 budgetList.Add(new Budget 
                 {

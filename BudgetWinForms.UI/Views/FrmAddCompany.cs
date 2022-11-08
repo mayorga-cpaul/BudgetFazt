@@ -1,7 +1,7 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Models;
-using BudgetFazt.Infraestructure.Repositories;
 using BudgetFazt.Util.Caché;
+using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
 using System.Runtime.InteropServices; 
 
@@ -31,19 +31,31 @@ namespace BudgetWinForms.UI.Views
 
         private async void btnAddCompany_Click(object sender, EventArgs e)
         {
-            Company company = new Company()
+            try
             {
-                UserId = DataOnMemory.UserId,
-                CompanyName = txtCompanyName.Texts,
-                Description = txtDescription.Texts,
-                Phone = txtPhone.Texts,
-                Address = txtAddress.Texts,
-            };
+                ErrorMessage.ValidateStringEmpty(txtCompanyName.Texts);
+                ErrorMessage.ValidateStringEmpty(txtDescription.Texts);
+                ErrorMessage.ValidateStringEmpty(txtPhone.Texts);
+                ErrorMessage.ValidateStringEmpty(txtAddress.Texts);
 
-            await companyRepositor.CreateAsync(company);
-            DataOnMemory.CompanyId = await companyRepositor.LastCretedIndex();
-            SingletonForms.GetForm(FormType.FrmMain).Show();
-            this.Hide();
+                Company company = new Company()
+                {
+                    UserId = DataOnMemory.UserId,
+                    CompanyName = txtCompanyName.Texts,
+                    Description = txtDescription.Texts,
+                    Phone = txtPhone.Texts,
+                    Address = txtAddress.Texts,
+                };
+
+                await companyRepositor.CreateAsync(company);
+                DataOnMemory.CompanyId = await companyRepositor.LastCretedIndex();
+                SingletonForms.GetForm(FormType.FrmMain).Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

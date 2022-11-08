@@ -27,13 +27,14 @@ namespace BudgetWinForms.UI.Views
 
         private async void FrmStart_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = new Size(708, 433);
             await Charge();
         }
 
         private async Task Charge()
         {
             var result = await projectRepository.GetAllProjects(DataOnMemory.CompanyId);
-
+            flowLayoutPanel1.Controls.Clear();
             foreach (var item in result)
             {
                 UCAddBudget uCAddBudget = new UCAddBudget(articleRepository, projectRepository,customerRepository,companyRepository, item.Id);
@@ -43,8 +44,7 @@ namespace BudgetWinForms.UI.Views
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmAddProject).Show();
-            SingletonForms.GetForm(FormType.FrmMain).Hide();
+            SingletonForms.GetForm(FormType.FrmAddProject).ShowDialog();
             await Charge();
 
         }

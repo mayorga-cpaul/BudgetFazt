@@ -52,6 +52,7 @@ namespace BudgetWinForms.UI.Views
 
         private async void FrmCompanies_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = new Size(808, 481);
             await Charge();
         }
 

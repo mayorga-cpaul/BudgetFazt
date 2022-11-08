@@ -7,5 +7,7 @@ namespace BudgetFazt.Infraestructure.Interfaces
         Task<bool> AccessToAppAsync(string email, string password);
         Task<int> LastCretedIndex();
         Task<User> GetByEmailPassword(string email, string password);
+        Task<bool> ExistOnDb(string email);
+        Task<bool> ExistName(string name);
     }
 }

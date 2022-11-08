@@ -184,6 +184,8 @@
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.txtPassword.Location = new System.Drawing.Point(52, 167);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.MaximumSize = new System.Drawing.Size(240, 35);
+            this.txtPassword.MinimumSize = new System.Drawing.Size(240, 35);
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -209,6 +211,8 @@
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.txtEmail.Location = new System.Drawing.Point(51, 91);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.MaximumSize = new System.Drawing.Size(240, 35);
+            this.txtEmail.MinimumSize = new System.Drawing.Size(240, 35);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -461,11 +465,13 @@
             this.ClientSize = new System.Drawing.Size(808, 481);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(808, 481);
             this.MinimumSize = new System.Drawing.Size(808, 481);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.airForm1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

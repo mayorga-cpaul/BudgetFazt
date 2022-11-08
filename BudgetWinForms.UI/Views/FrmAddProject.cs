@@ -1,7 +1,10 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
+using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
+using DocumentFormat.OpenXml.Office2010.Excel;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace BudgetWinForms.UI.Views
 {
@@ -36,42 +39,76 @@ namespace BudgetWinForms.UI.Views
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
-            Project project = new Project()
+            try
             {
-                CompanyId = DataOnMemory.CompanyId,
-                NameProject = txtName.Texts,
-                Description = txtDescription.Texts,
-                StartDate = dtStart.Value,
-                EndDate = dtEnd.Value
-            };
+                ErrorMessage.ValidateProject(txtName.Texts, txtDescription.Texts, dtStart.Value, dtEnd.Value);
 
-            await projectRepository.CreateAsync(project);
+                if (CustomerOnMemory.Name.Equals(String.Empty))
+                {
+                    throw new Exception("Por favor agregue los datos del cliente");
+                }
 
-            Customer customer = new Customer()
+                if (CustomerOnMemory.Phone.Equals(String.Empty))
+                {
+                    throw new Exception("Por favor agregue los datos del cliente");
+                }
+
+                if (CustomerOnMemory.Email.Equals(String.Empty))
+                {
+                    throw new Exception("Por favor agregue los datos del cliente");
+                }
+
+                if (CustomerOnMemory.Address.Equals(String.Empty))
+                {
+                    throw new Exception("Por favor agregue los datos del cliente");
+                }
+
+
+                Project project = new Project()
+                {
+                    CompanyId = DataOnMemory.CompanyId,
+                    NameProject = txtName.Texts,
+                    Description = txtDescription.Texts,
+                    StartDate = dtStart.Value,
+                    EndDate = dtEnd.Value
+                };
+
+                await projectRepository.CreateAsync(project);
+
+                Customer customer = new Customer()
+                {
+                    Id = await projectRepository.LastCretedIndex(),
+                    CompanyId = DataOnMemory.CompanyId,
+                    Name = CustomerOnMemory.Name,
+                    Phone = CustomerOnMemory.Phone,
+                    Email = CustomerOnMemory.Email,
+                    Address = CustomerOnMemory.Address,
+                };
+
+                await customerRepository.CreateAsync(customer);
+
+                SingletonForms.GetForm(FormType.FrmMain).Show();
+                this.Hide();
+            }
+            catch (Exception ex)
             {
-                Id = await projectRepository.LastCretedIndex(),
-                CompanyId = DataOnMemory.CompanyId,
-                Name = CustomerOnMemory.Name,
-                Phone = CustomerOnMemory.Phone,
-                Email = CustomerOnMemory.Email,
-                Address = CustomerOnMemory.Address,
-            };
-
-            await customerRepository.CreateAsync(customer);
-
-            SingletonForms.GetForm(FormType.FrmMain).Show();
-            this.Hide();
+                MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void FrmAddProject_Load(object sender, EventArgs e)
         {
-
+            SingletonForms.GetForm(FormType.FrmMain).Hide();
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmAddCustomer).Show();
-            SingletonForms.GetForm(FormType.FrmAddProject).Hide();
+            SingletonForms.GetForm(FormType.FrmAddCustomer).ShowDialog();
+        }
+
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ErrorMessage.OnlyLetters(e);
         }
     }
 }

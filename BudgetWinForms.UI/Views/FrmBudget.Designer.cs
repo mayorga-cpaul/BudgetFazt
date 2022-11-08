@@ -124,11 +124,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.panel9, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel8, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 504);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 507);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(631, 43);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(643, 51);
             this.tableLayoutPanel2.TabIndex = 45;
             // 
             // panel9
@@ -137,9 +137,9 @@
             this.panel9.Controls.Add(this.lblTotalExpense);
             this.panel9.Controls.Add(this.nightLabel12);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(318, 3);
+            this.panel9.Location = new System.Drawing.Point(324, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(310, 37);
+            this.panel9.Size = new System.Drawing.Size(316, 45);
             this.panel9.TabIndex = 6;
             // 
             // lblTotalExpense
@@ -174,7 +174,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(309, 37);
+            this.panel8.Size = new System.Drawing.Size(315, 45);
             this.panel8.TabIndex = 5;
             // 
             // lblIrr
@@ -231,7 +231,7 @@
             this.poisonDataGridView1.EnableHeadersVisualStyles = false;
             this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.Location = new System.Drawing.Point(15, 195);
+            this.poisonDataGridView1.Location = new System.Drawing.Point(3, 211);
             this.poisonDataGridView1.Name = "poisonDataGridView1";
             this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -246,7 +246,7 @@
             this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.poisonDataGridView1.RowTemplate.Height = 29;
             this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(629, 303);
+            this.poisonDataGridView1.Size = new System.Drawing.Size(641, 287);
             this.poisonDataGridView1.TabIndex = 44;
             // 
             // tableLayoutPanel1
@@ -262,13 +262,13 @@
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(634, 177);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(643, 186);
             this.tableLayoutPanel1.TabIndex = 43;
             // 
             // panel7
@@ -277,9 +277,9 @@
             this.panel7.Controls.Add(this.lblFin);
             this.panel7.Controls.Add(this.nightLabel8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(320, 142);
+            this.panel7.Location = new System.Drawing.Point(324, 151);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(311, 32);
+            this.panel7.Size = new System.Drawing.Size(316, 32);
             this.panel7.TabIndex = 5;
             // 
             // lblFin
@@ -310,9 +310,9 @@
             // 
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(320, 54);
+            this.panel4.Location = new System.Drawing.Point(324, 63);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(311, 82);
+            this.panel4.Size = new System.Drawing.Size(316, 82);
             this.panel4.TabIndex = 3;
             // 
             // panel5
@@ -327,7 +327,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(311, 82);
+            this.panel5.Size = new System.Drawing.Size(316, 82);
             this.panel5.TabIndex = 1;
             // 
             // lblClientPhone
@@ -407,9 +407,9 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.nightLabel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(320, 3);
+            this.panel3.Location = new System.Drawing.Point(324, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(311, 45);
+            this.panel3.Size = new System.Drawing.Size(316, 54);
             this.panel3.TabIndex = 2;
             // 
             // nightLabel2
@@ -431,7 +431,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(311, 45);
+            this.panel2.Size = new System.Drawing.Size(315, 54);
             this.panel2.TabIndex = 1;
             // 
             // nightLabel1
@@ -456,9 +456,9 @@
             this.panel1.Controls.Add(this.lblCompanyName);
             this.panel1.Controls.Add(this.nightLabel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 54);
+            this.panel1.Location = new System.Drawing.Point(3, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(311, 82);
+            this.panel1.Size = new System.Drawing.Size(315, 82);
             this.panel1.TabIndex = 0;
             // 
             // lblCompanyPhone
@@ -539,9 +539,9 @@
             this.panel6.Controls.Add(this.lblIinicio);
             this.panel6.Controls.Add(this.nightLabel5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 142);
+            this.panel6.Location = new System.Drawing.Point(3, 151);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(311, 32);
+            this.panel6.Size = new System.Drawing.Size(315, 32);
             this.panel6.TabIndex = 4;
             // 
             // lblIinicio
@@ -578,9 +578,9 @@
             this.panel10.Controls.Add(this.btnAdd);
             this.panel10.Controls.Add(this.btnRemove);
             this.panel10.Controls.Add(this.pictureBox1);
-            this.panel10.Location = new System.Drawing.Point(652, 3);
+            this.panel10.Location = new System.Drawing.Point(647, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(168, 552);
+            this.panel10.Size = new System.Drawing.Size(173, 552);
             this.panel10.TabIndex = 42;
             // 
             // nightButton1
@@ -593,7 +593,7 @@
             this.nightButton1.HoverBackColor = System.Drawing.Color.White;
             this.nightButton1.HoverForeColor = System.Drawing.Color.White;
             this.nightButton1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.nightButton1.Location = new System.Drawing.Point(18, 399);
+            this.nightButton1.Location = new System.Drawing.Point(23, 399);
             this.nightButton1.MinimumSize = new System.Drawing.Size(144, 47);
             this.nightButton1.Name = "nightButton1";
             this.nightButton1.NormalBackColor = System.Drawing.Color.White;
@@ -617,7 +617,7 @@
             this.btnExport.HoverBackColor = System.Drawing.Color.White;
             this.btnExport.HoverForeColor = System.Drawing.Color.White;
             this.btnExport.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnExport.Location = new System.Drawing.Point(18, 339);
+            this.btnExport.Location = new System.Drawing.Point(23, 339);
             this.btnExport.MinimumSize = new System.Drawing.Size(144, 47);
             this.btnExport.Name = "btnExport";
             this.btnExport.NormalBackColor = System.Drawing.Color.White;
@@ -629,7 +629,7 @@
             this.btnExport.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.btnExport.TabIndex = 38;
             this.btnExport.Text = "Exportar";
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click_1);
             // 
             // btnAdd
             // 
@@ -641,7 +641,7 @@
             this.btnAdd.HoverBackColor = System.Drawing.Color.White;
             this.btnAdd.HoverForeColor = System.Drawing.Color.White;
             this.btnAdd.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnAdd.Location = new System.Drawing.Point(18, 219);
+            this.btnAdd.Location = new System.Drawing.Point(23, 219);
             this.btnAdd.MinimumSize = new System.Drawing.Size(144, 47);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.NormalBackColor = System.Drawing.Color.White;
@@ -665,7 +665,7 @@
             this.btnRemove.HoverBackColor = System.Drawing.Color.White;
             this.btnRemove.HoverForeColor = System.Drawing.Color.White;
             this.btnRemove.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnRemove.Location = new System.Drawing.Point(18, 279);
+            this.btnRemove.Location = new System.Drawing.Point(23, 279);
             this.btnRemove.MinimumSize = new System.Drawing.Size(144, 47);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.NormalBackColor = System.Drawing.Color.White;
@@ -677,6 +677,7 @@
             this.btnRemove.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.btnRemove.TabIndex = 37;
             this.btnRemove.Text = "Eliminar";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // pictureBox1
             // 

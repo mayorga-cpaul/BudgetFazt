@@ -4,6 +4,6 @@
     {
         Mala,
         Regular, 
-        MuyBuena
+        MuyBuena,
     }
 }

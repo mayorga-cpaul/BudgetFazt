@@ -4,6 +4,7 @@ using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
 using BudgetFazt.Util.Processes;
 using BudgetWinForms.UI.Settings;
+using DocumentFormat.OpenXml.Office2016.Drawing.Command;
 using ExportToExcel;
 
 namespace BudgetWinForms.UI.Views
@@ -26,6 +27,7 @@ namespace BudgetWinForms.UI.Views
 
         private async void FrmBudget_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = new Size(823, 559);
             await ChargeLab();
             await ChargeDtg();
             ChargeResult();
@@ -34,6 +36,12 @@ namespace BudgetWinForms.UI.Views
         private async Task ChargeDtg()
         {
             poisonDataGridView1.DataSource = null;
+
+            if (poisonDataGridView1.Rows.Count > 0)
+            {
+                poisonDataGridView1.Rows.Clear();
+            }
+
             budgets = CalculusBudget.GetBudget((await articleRepository.GetAllArticles(DataOnMemory.ProjectId)).ToList());
             poisonDataGridView1.DataSource = budgets;
 
@@ -69,28 +77,36 @@ namespace BudgetWinForms.UI.Views
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
-
             SingletonForms.GetForm(FormType.FrmMain).Show();
             this.Hide();
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmArticle).Show();
+            SingletonForms.GetForm(FormType.FrmArticle).ShowDialog();
             await ChargeDtg();
             ChargeResult();
-            this.Hide();
         }
 
         private void ChargeResult()
         {
+            if (budgets.Count == 0)
+            {
+                return;
+            }
             var budget = budgets[budgets.Count - 1];
-            lblIrr.Text = budget.SumTotal * (40 / 100) + " $";
+            var result = budget.SumTotal*0.40;
+            lblIrr.Text =  Math.Round(result, 2) + " $";
             lblTotalExpense.Text = budget.SumTotal + " $";
         }
 
-        private void btnExport_Click(object sender, EventArgs e)
+        private void btnExport_Click_1(object sender, EventArgs e)
         {
+            if (budgets.Count == 0)
+            {
+                return;
+            }
+
             if (poisonDataGridView1.Rows.Count > 0)
             {
                 string path = string.Empty;
@@ -107,7 +123,33 @@ namespace BudgetWinForms.UI.Views
                 path = String.Empty;
                 path = get;
             }
+        }
 
+        private async void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int id = 0;
+                if ((int)poisonDataGridView1.Rows.Count > 0)
+                    id = id = (int)poisonDataGridView1.Rows[poisonDataGridView1.CurrentRow.Index].Cells[0].Value;
+                else
+                    return;
+
+                if (id == 0)
+                {
+                    return;
+                }
+
+                await articleRepository.DeleteAsync(id);
+
+                await ChargeDtg();
+                ChargeResult();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

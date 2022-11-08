@@ -2,6 +2,7 @@
 using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
+using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
 
 namespace BudgetWinForms.UI.Views
@@ -28,24 +29,54 @@ namespace BudgetWinForms.UI.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Article article = new Article()
+            try
             {
-                ProjectId = DataOnMemory.ProjectId,
-                Name = txtArticleName.Texts,
-                UnitPrice = double.Parse(txtUnitPrice.Texts),
-                Quantity = int.Parse(txtQuantity.Texts),
-                Description = txtDescription.Texts,
-                Quality = cmbQuality.SelectedItem.ToString(),
-                Discount = double.Parse(txtDescuento.Texts),
-            };
+                if (cmbQuality.SelectedIndex < 0)
+                {
+                    throw new Exception("Por favor selecciona la calidad del producto");
+                }
+                ErrorMessage.ValidateArticle(double.Parse(txtUnitPrice.Texts), int.Parse(txtQuantity.Texts), double.Parse(txtDescuento.Texts));
 
-            articleRepository.CreateAsync(article);
+                Article article = new Article()
+                {
+                    ProjectId = DataOnMemory.ProjectId,
+                    Name = txtArticleName.Texts,
+                    UnitPrice = double.Parse(txtUnitPrice.Texts),
+                    Quantity = int.Parse(txtQuantity.Texts),
+                    Description = txtDescription.Texts,
+                    Quality = cmbQuality.SelectedItem.ToString(),
+                    Discount = double.Parse(txtDescuento.Texts),
+                };
+
+                articleRepository.CreateAsync(article);
+                SingletonForms.GetForm(FormType.FrmBudget).Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
             SingletonForms.GetForm(FormType.FrmBudget).Show();
             this.Hide();
+        }
+
+        private void txtArticleName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ErrorMessage.OnlyLetters(e);
+        }
+
+        private void txtUnitPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ErrorMessage.OnlyNumbers(e);
+        }
+
+        private void txtQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ErrorMessage.OnlyNumbers(e);
         }
     }
 }

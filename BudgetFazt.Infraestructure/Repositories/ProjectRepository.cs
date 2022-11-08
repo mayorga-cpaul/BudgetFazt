@@ -26,7 +26,7 @@ namespace BudgetFazt.Infraestructure.Repositories
 
         public async Task<int> LastCretedIndex()
         {
-            return await repository.Users.MaxAsync(e => e.Id);
+            return await repository.Projects.MaxAsync(e => e.Id);
         }
     }
 }

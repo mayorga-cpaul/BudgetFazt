@@ -16,12 +16,12 @@ namespace BudgetFazt.Util.Caché
     {
         public static int Id { get; set; }
         public static int CompanyId { get; set; }
-        public static string Name { get; set; } = null!;
+        public static string Name { get; set; } = String.Empty;
 
-        public static string Phone { get; set; } = null!;
+        public static string Phone { get; set; } = String.Empty;
 
-        public static string Email { get; set; } = null!;
+        public static string Email { get; set; } = String.Empty;
 
-        public static string Address { get; set; } = null!;
+        public static string Address { get; set; } = String.Empty;
     }
 }

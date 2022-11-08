@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>documentation_folder_document_management_files_file_project_icon_142253.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="documentation_folder_document_management_files_file_project_icon_142253.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Easy.ExportToExcel" Version="1.0.6" />

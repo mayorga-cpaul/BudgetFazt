@@ -43,6 +43,6 @@ namespace BudgetFazt.Infraestructure.Interfaces
         /// </summary>
         /// <param name="where"></param>
         /// <returns></returns>
-        Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> where);
+        //Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> where);
     }
 }

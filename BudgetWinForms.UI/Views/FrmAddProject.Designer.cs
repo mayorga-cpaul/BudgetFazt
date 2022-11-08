@@ -206,6 +206,7 @@
             this.txtName.TabIndex = 48;
             this.txtName.Texts = "";
             this.txtName.UnderlinedStyle = false;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // dtStart
             // 
