@@ -43,6 +43,7 @@ public partial class BudgetFaztContext : DbContext
     /// <param name="modelBuilder"></param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // mapeo de propiedades de ob
         modelBuilder.Entity<Article>(entity =>
         {
             entity.ToTable(nameof(Article));

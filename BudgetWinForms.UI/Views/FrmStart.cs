@@ -46,7 +46,6 @@ namespace BudgetWinForms.UI.Views
         {
             SingletonForms.GetForm(FormType.FrmAddProject).ShowDialog();
             await Charge();
-
         }
     }
 }

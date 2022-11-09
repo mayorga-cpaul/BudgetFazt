@@ -1,9 +1,8 @@
-﻿namespace BudgetFazt.Infraestructure.Enums
+﻿namespace BudgetFazt.Infraestructure.Enums;
+
+public enum Quality
 {
-    public enum Quality
-    {
-        Mala,
-        Regular, 
-        MuyBuena,
-    }
+    Mala,
+    Regular, 
+    MuyBuena,
 }

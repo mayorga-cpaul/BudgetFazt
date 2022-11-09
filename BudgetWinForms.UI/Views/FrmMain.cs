@@ -41,18 +41,18 @@ namespace BudgetWinForms.UI.Views
         private void FrmMain_Load(object sender, EventArgs e)
         {
             this.MinimumSize = new Size(864, 481);
-            AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmStart));
+            AbrirFormEnPanel(new FrmStart(userRepository, companyRepository, articleRepository, projectRepository, customerRepository));
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmStart));
+            AbrirFormEnPanel(new FrmStart(userRepository, companyRepository, articleRepository, projectRepository, customerRepository));
         }
 
         private void BtnBudget_Click(object sender, EventArgs e)
         {
             SingletonForms.GetForm(FormType.FrmCompanies).Show();
-            this.Hide();
+            this.Close();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

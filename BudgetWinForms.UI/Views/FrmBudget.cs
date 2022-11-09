@@ -77,8 +77,8 @@ namespace BudgetWinForms.UI.Views
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmMain).Show();
             this.Hide();
+            SingletonForms.GetForm(FormType.FrmMain).Show();
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)

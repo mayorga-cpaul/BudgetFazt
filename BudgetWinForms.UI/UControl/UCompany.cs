@@ -2,6 +2,7 @@
 using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
+using BudgetWinForms.UI.Views;
 
 namespace BudgetWinForms.UI.UControl
 {
@@ -10,6 +11,11 @@ namespace BudgetWinForms.UI.UControl
         private readonly ICompanyRepository companyRepository;
         private int companyId;
         private Company Company { get; set; } = null!;
+        public IUserRepository userRepository { get; set; }
+        public IArticleRepository articleRepository { get; set; }
+        public IProjectRepository projectRepository { get; set; }
+        public ICustomerRepository customerRepository { get; set; }
+
 
         public UCompany(ICompanyRepository companyRepository, int companyId)
         {
@@ -31,7 +37,8 @@ namespace BudgetWinForms.UI.UControl
         private void UCompany_Click(object sender, EventArgs e)
         {
             DataOnMemory.CompanyId = companyId;
-            SingletonForms.GetForm(FormType.FrmMain).Show();
+            var tst = new FrmMain(userRepository, companyRepository, articleRepository, projectRepository, customerRepository);
+            tst.Show();
             SingletonForms.GetForm(FormType.FrmCompanies).Hide();
         }
     }

@@ -66,16 +66,16 @@
             this.txtDescription.BorderSize = 2;
             this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txtDescription.Location = new System.Drawing.Point(163, 352);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescription.Location = new System.Drawing.Point(143, 264);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescription.Multiline = false;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescription.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
             this.txtDescription.PasswordChar = false;
             this.txtDescription.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtDescription.PlaceholderText = "Descripción";
             this.txtDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDescription.Size = new System.Drawing.Size(405, 35);
+            this.txtDescription.Size = new System.Drawing.Size(354, 27);
             this.txtDescription.TabIndex = 25;
             this.txtDescription.Texts = "";
             this.txtDescription.UnderlinedStyle = false;
@@ -92,16 +92,16 @@
             this.txtQuantity.BorderSize = 2;
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txtQuantity.Location = new System.Drawing.Point(163, 290);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantity.Location = new System.Drawing.Point(143, 218);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtQuantity.Multiline = false;
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtQuantity.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
             this.txtQuantity.PasswordChar = false;
             this.txtQuantity.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtQuantity.PlaceholderText = "Cantidad";
             this.txtQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtQuantity.Size = new System.Drawing.Size(405, 35);
+            this.txtQuantity.Size = new System.Drawing.Size(354, 27);
             this.txtQuantity.TabIndex = 24;
             this.txtQuantity.Texts = "";
             this.txtQuantity.UnderlinedStyle = false;
@@ -119,16 +119,16 @@
             this.txtUnitPrice.BorderSize = 2;
             this.txtUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUnitPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txtUnitPrice.Location = new System.Drawing.Point(163, 220);
-            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUnitPrice.Location = new System.Drawing.Point(143, 165);
+            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUnitPrice.Multiline = false;
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUnitPrice.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
             this.txtUnitPrice.PasswordChar = false;
             this.txtUnitPrice.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(20)))), ((int)(((byte)(0)))));
             this.txtUnitPrice.PlaceholderText = "Precio unitario";
             this.txtUnitPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtUnitPrice.Size = new System.Drawing.Size(405, 35);
+            this.txtUnitPrice.Size = new System.Drawing.Size(354, 27);
             this.txtUnitPrice.TabIndex = 23;
             this.txtUnitPrice.Texts = "";
             this.txtUnitPrice.UnderlinedStyle = false;
@@ -146,16 +146,16 @@
             this.txtArticleName.BorderSize = 2;
             this.txtArticleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtArticleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txtArticleName.Location = new System.Drawing.Point(163, 148);
-            this.txtArticleName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtArticleName.Location = new System.Drawing.Point(143, 111);
+            this.txtArticleName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtArticleName.Multiline = false;
             this.txtArticleName.Name = "txtArticleName";
-            this.txtArticleName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtArticleName.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
             this.txtArticleName.PasswordChar = false;
             this.txtArticleName.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtArticleName.PlaceholderText = "Nombre de articulo";
             this.txtArticleName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtArticleName.Size = new System.Drawing.Size(405, 35);
+            this.txtArticleName.Size = new System.Drawing.Size(354, 27);
             this.txtArticleName.TabIndex = 22;
             this.txtArticleName.Texts = "";
             this.txtArticleName.UnderlinedStyle = false;
@@ -172,15 +172,16 @@
             this.btnAdd.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnAdd.Location = new System.Drawing.Point(364, 578);
-            this.btnAdd.MinimumSize = new System.Drawing.Size(144, 47);
+            this.btnAdd.Location = new System.Drawing.Point(318, 434);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.MinimumSize = new System.Drawing.Size(126, 35);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.btnAdd.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.Radius = 20;
-            this.btnAdd.Size = new System.Drawing.Size(204, 54);
+            this.btnAdd.Size = new System.Drawing.Size(178, 40);
             this.btnAdd.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.btnAdd.TabIndex = 29;
             this.btnAdd.Text = "Agregar";
@@ -189,9 +190,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(288, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(252, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(28, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
@@ -199,9 +201,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(326, 67);
+            this.pictureBox2.Location = new System.Drawing.Point(285, 50);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(28, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
@@ -209,9 +212,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(364, 67);
+            this.pictureBox3.Location = new System.Drawing.Point(318, 50);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(28, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
@@ -219,9 +223,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(402, 67);
+            this.pictureBox4.Location = new System.Drawing.Point(352, 50);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox4.Size = new System.Drawing.Size(28, 22);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 33;
             this.pictureBox4.TabStop = false;
@@ -234,9 +239,9 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel4.Location = new System.Drawing.Point(270, 28);
+            this.nightLabel4.Location = new System.Drawing.Point(236, 21);
             this.nightLabel4.Name = "nightLabel4";
-            this.nightLabel4.Size = new System.Drawing.Size(180, 31);
+            this.nightLabel4.Size = new System.Drawing.Size(149, 25);
             this.nightLabel4.TabIndex = 34;
             this.nightLabel4.Text = "Agregar articulo";
             // 
@@ -251,15 +256,16 @@
             this.nightButton1.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.nightButton1.Location = new System.Drawing.Point(150, 578);
-            this.nightButton1.MinimumSize = new System.Drawing.Size(144, 47);
+            this.nightButton1.Location = new System.Drawing.Point(131, 434);
+            this.nightButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nightButton1.MinimumSize = new System.Drawing.Size(126, 35);
             this.nightButton1.Name = "nightButton1";
             this.nightButton1.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.nightButton1.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.nightButton1.Radius = 20;
-            this.nightButton1.Size = new System.Drawing.Size(208, 54);
+            this.nightButton1.Size = new System.Drawing.Size(182, 40);
             this.nightButton1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.nightButton1.TabIndex = 35;
             this.nightButton1.Text = "Cancelar";
@@ -277,16 +283,16 @@
             this.txtDescuento.BorderSize = 2;
             this.txtDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txtDescuento.Location = new System.Drawing.Point(163, 476);
-            this.txtDescuento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescuento.Location = new System.Drawing.Point(142, 370);
+            this.txtDescuento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescuento.Multiline = false;
             this.txtDescuento.Name = "txtDescuento";
-            this.txtDescuento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescuento.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
             this.txtDescuento.PasswordChar = false;
             this.txtDescuento.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtDescuento.PlaceholderText = "Descuento";
             this.txtDescuento.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDescuento.Size = new System.Drawing.Size(405, 35);
+            this.txtDescuento.Size = new System.Drawing.Size(354, 27);
             this.txtDescuento.TabIndex = 26;
             this.txtDescuento.Texts = "";
             this.txtDescuento.UnderlinedStyle = false;
@@ -299,9 +305,9 @@
             this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel1.Location = new System.Drawing.Point(176, 120);
+            this.nightLabel1.Location = new System.Drawing.Point(154, 90);
             this.nightLabel1.Name = "nightLabel1";
-            this.nightLabel1.Size = new System.Drawing.Size(139, 20);
+            this.nightLabel1.Size = new System.Drawing.Size(110, 15);
             this.nightLabel1.TabIndex = 36;
             this.nightLabel1.Text = "Nombre de articulo";
             // 
@@ -313,9 +319,9 @@
             this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel2.Location = new System.Drawing.Point(176, 194);
+            this.nightLabel2.Location = new System.Drawing.Point(154, 146);
             this.nightLabel2.Name = "nightLabel2";
-            this.nightLabel2.Size = new System.Drawing.Size(105, 20);
+            this.nightLabel2.Size = new System.Drawing.Size(84, 15);
             this.nightLabel2.TabIndex = 37;
             this.nightLabel2.Text = "Precio unitario";
             // 
@@ -327,9 +333,9 @@
             this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel3.Location = new System.Drawing.Point(176, 264);
+            this.nightLabel3.Location = new System.Drawing.Point(154, 198);
             this.nightLabel3.Name = "nightLabel3";
-            this.nightLabel3.Size = new System.Drawing.Size(69, 20);
+            this.nightLabel3.Size = new System.Drawing.Size(55, 15);
             this.nightLabel3.TabIndex = 38;
             this.nightLabel3.Text = "Cantidad";
             // 
@@ -341,9 +347,9 @@
             this.nightLabel5.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel5.Location = new System.Drawing.Point(176, 330);
+            this.nightLabel5.Location = new System.Drawing.Point(154, 248);
             this.nightLabel5.Name = "nightLabel5";
-            this.nightLabel5.Size = new System.Drawing.Size(87, 20);
+            this.nightLabel5.Size = new System.Drawing.Size(69, 15);
             this.nightLabel5.TabIndex = 39;
             this.nightLabel5.Text = "Descripción";
             // 
@@ -355,9 +361,9 @@
             this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel6.Location = new System.Drawing.Point(176, 454);
+            this.nightLabel6.Location = new System.Drawing.Point(153, 353);
             this.nightLabel6.Name = "nightLabel6";
-            this.nightLabel6.Size = new System.Drawing.Size(79, 20);
+            this.nightLabel6.Size = new System.Drawing.Size(63, 15);
             this.nightLabel6.TabIndex = 40;
             this.nightLabel6.Text = "Descuento";
             // 
@@ -366,10 +372,11 @@
             this.cmbQuality.BackColor = System.Drawing.Color.Ivory;
             this.cmbQuality.ForeColor = System.Drawing.Color.Ivory;
             this.cmbQuality.FormattingEnabled = true;
-            this.cmbQuality.ItemHeight = 24;
-            this.cmbQuality.Location = new System.Drawing.Point(163, 421);
+            this.cmbQuality.ItemHeight = 23;
+            this.cmbQuality.Location = new System.Drawing.Point(143, 316);
+            this.cmbQuality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbQuality.Name = "cmbQuality";
-            this.cmbQuality.Size = new System.Drawing.Size(405, 30);
+            this.cmbQuality.Size = new System.Drawing.Size(355, 29);
             this.cmbQuality.TabIndex = 41;
             this.cmbQuality.UseSelectable = true;
             // 
@@ -381,18 +388,18 @@
             this.nightLabel7.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel7.Location = new System.Drawing.Point(176, 398);
+            this.nightLabel7.Location = new System.Drawing.Point(154, 298);
             this.nightLabel7.Name = "nightLabel7";
-            this.nightLabel7.Size = new System.Drawing.Size(60, 20);
+            this.nightLabel7.Size = new System.Drawing.Size(47, 15);
             this.nightLabel7.TabIndex = 42;
             this.nightLabel7.Text = "Calidad";
             // 
             // FrmArticle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(718, 658);
+            this.ClientSize = new System.Drawing.Size(628, 494);
             this.Controls.Add(this.nightLabel7);
             this.Controls.Add(this.cmbQuality);
             this.Controls.Add(this.nightLabel6);
@@ -413,7 +420,8 @@
             this.Controls.Add(this.txtUnitPrice);
             this.Controls.Add(this.txtArticleName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(705, 559);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(617, 419);
             this.Name = "FrmArticle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmArticle";

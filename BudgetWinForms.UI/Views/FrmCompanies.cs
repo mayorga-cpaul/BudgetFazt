@@ -64,6 +64,10 @@ namespace BudgetWinForms.UI.Views
             foreach (var item in companies)
             {
                 UCompany uCompany = new UCompany(companyRepository, item.Id);
+                uCompany.userRepository = userRepository;
+                uCompany.articleRepository = articleRepository;
+                uCompany.projectRepository = projectRepository;
+                uCompany.customerRepository = customerRepository;
                 flowLayoutPanel1.Controls.Add(uCompany);
             }
         }
