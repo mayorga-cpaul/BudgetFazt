@@ -31,6 +31,10 @@ namespace BudgetWinForms.UI.Settings
                     return ServicesReq.ServiceProvider.GetRequiredService<FrmRegister>();
                 case FormType.FrmStart:
                     return ServicesReq.ServiceProvider.GetRequiredService<FrmStart>();
+                case FormType.FrmGestion:
+                    return ServicesReq.ServiceProvider.GetRequiredService<FrmGestionProject>();
+                case FormType.FrmUser:
+                    return ServicesReq.ServiceProvider.GetRequiredService<FrmUser>();
                 default: return null!;
             }
         }
@@ -52,7 +56,9 @@ namespace BudgetWinForms.UI.Settings
             services.AddSingleton<FrmCompanies>();
             services.AddSingleton<FrmMain>();
             services.AddSingleton<FrmRegister>();
+            services.AddSingleton<FrmGestionProject>();
             services.AddSingleton<FrmStart>();
+            services.AddSingleton<FrmUser>();
         }
     }
 }

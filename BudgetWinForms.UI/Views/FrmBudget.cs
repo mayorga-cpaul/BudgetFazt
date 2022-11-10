@@ -1,10 +1,8 @@
 ﻿
 using BudgetFazt.Infraestructure.Interfaces;
-using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
 using BudgetFazt.Util.Processes;
 using BudgetWinForms.UI.Settings;
-using DocumentFormat.OpenXml.Office2016.Drawing.Command;
 using ExportToExcel;
 
 namespace BudgetWinForms.UI.Views
@@ -15,18 +13,25 @@ namespace BudgetWinForms.UI.Views
         private readonly ICustomerRepository customerRepository;
         private readonly ICompanyRepository companyRepository;
         private readonly IProjectRepository projectRepository;
+        private readonly IUserRepository userRepository;
         private List<Budget> budgets = new List<Budget>();
-        public FrmBudget(IArticleRepository articleRepository, ICustomerRepository customerRepository, ICompanyRepository companyRepository, IProjectRepository projectRepository)
+        
+        public FrmBudget(IArticleRepository articleRepository, ICustomerRepository customerRepository, 
+            ICompanyRepository companyRepository, 
+            IProjectRepository projectRepository, IUserRepository userRepository)
         {
             InitializeComponent();
             this.articleRepository = articleRepository;
             this.customerRepository = customerRepository;
             this.companyRepository = companyRepository;
             this.projectRepository = projectRepository;
+            this.userRepository = userRepository;
         }
 
         private async void FrmBudget_Load(object sender, EventArgs e)
         {
+            SingletonForms.GetForm(FormType.FrmMain).Hide();
+
             this.MinimumSize = new Size(823, 559);
             await ChargeLab();
             await ChargeDtg();
@@ -54,7 +59,6 @@ namespace BudgetWinForms.UI.Views
             poisonDataGridView1.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             poisonDataGridView1.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             poisonDataGridView1.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private async Task ChargeLab()
@@ -77,8 +81,10 @@ namespace BudgetWinForms.UI.Views
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //var tst = new FrmMain(userRepository, companyRepository, articleRepository, projectRepository, customerRepository);
+            //tst.Show();
             SingletonForms.GetForm(FormType.FrmMain).Show();
+            this.Dispose();
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)
@@ -102,26 +108,18 @@ namespace BudgetWinForms.UI.Views
 
         private void btnExport_Click_1(object sender, EventArgs e)
         {
-            if (budgets.Count == 0)
-            {
-                return;
-            }
-
-            if (poisonDataGridView1.Rows.Count > 0)
+            try
             {
                 string path = string.Empty;
-                string get = string.Empty;
-                FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
-                {
-                    path = folderBrowserDialog.SelectedPath + "\\";
-                    get = folderBrowserDialog.SelectedPath + "\\";
-                }
+                string data = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
-                path = $"{path}presupuesto.xlsx";
+                path = $"{data}\\presupuesto.xlsx";
                 CreateExcelFile.CreateExcelDocument(budgets, path);
                 path = String.Empty;
-                path = get;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar el archivo", "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

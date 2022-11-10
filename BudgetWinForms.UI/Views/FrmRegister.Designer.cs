@@ -54,9 +54,8 @@
             this.panelButtons.Controls.Add(this.pictureBox2);
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelButtons.Location = new System.Drawing.Point(0, 0);
-            this.panelButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelButtons.Name = "panelButtons";
-            this.panelButtons.Size = new System.Drawing.Size(707, 38);
+            this.panelButtons.Size = new System.Drawing.Size(808, 51);
             this.panelButtons.TabIndex = 2;
             this.panelButtons.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelButtons_MouseDown);
             // 
@@ -64,10 +63,9 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(662, 2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(757, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -80,22 +78,20 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.87097F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 53);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 71);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(678, 291);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(775, 388);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(401, 287);
+            this.pictureBox1.Size = new System.Drawing.Size(459, 382);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -110,10 +106,9 @@
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(410, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(468, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(265, 287);
+            this.panel1.Size = new System.Drawing.Size(304, 382);
             this.panel1.TabIndex = 1;
             // 
             // nightLabel1
@@ -123,9 +118,9 @@
             this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.nightLabel1.Location = new System.Drawing.Point(40, 34);
+            this.nightLabel1.Location = new System.Drawing.Point(46, 45);
             this.nightLabel1.Name = "nightLabel1";
-            this.nightLabel1.Size = new System.Drawing.Size(51, 15);
+            this.nightLabel1.Size = new System.Drawing.Size(64, 20);
             this.nightLabel1.TabIndex = 53;
             this.nightLabel1.Text = "Nombre";
             // 
@@ -136,9 +131,9 @@
             this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.nightLabel3.Location = new System.Drawing.Point(27, 130);
+            this.nightLabel3.Location = new System.Drawing.Point(31, 173);
             this.nightLabel3.Name = "nightLabel3";
-            this.nightLabel3.Size = new System.Drawing.Size(67, 15);
+            this.nightLabel3.Size = new System.Drawing.Size(83, 20);
             this.nightLabel3.TabIndex = 52;
             this.nightLabel3.Text = "Contraseña";
             // 
@@ -149,9 +144,9 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
-            this.nightLabel4.Location = new System.Drawing.Point(27, 82);
+            this.nightLabel4.Location = new System.Drawing.Point(31, 109);
             this.nightLabel4.Name = "nightLabel4";
-            this.nightLabel4.Size = new System.Drawing.Size(105, 15);
+            this.nightLabel4.Size = new System.Drawing.Size(132, 20);
             this.nightLabel4.TabIndex = 51;
             this.nightLabel4.Text = "Correo electrónico";
             // 
@@ -165,16 +160,15 @@
             this.btnAcessRequest.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.btnAcessRequest.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.btnAcessRequest.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnAcessRequest.Location = new System.Drawing.Point(27, 235);
-            this.btnAcessRequest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAcessRequest.MinimumSize = new System.Drawing.Size(126, 35);
+            this.btnAcessRequest.Location = new System.Drawing.Point(31, 313);
+            this.btnAcessRequest.MinimumSize = new System.Drawing.Size(144, 47);
             this.btnAcessRequest.Name = "btnAcessRequest";
             this.btnAcessRequest.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.btnAcessRequest.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.btnAcessRequest.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.btnAcessRequest.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(192)))));
             this.btnAcessRequest.Radius = 20;
-            this.btnAcessRequest.Size = new System.Drawing.Size(210, 40);
+            this.btnAcessRequest.Size = new System.Drawing.Size(241, 53);
             this.btnAcessRequest.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.btnAcessRequest.TabIndex = 50;
             this.btnAcessRequest.Text = "Registrarse";
@@ -192,16 +186,16 @@
             this.txtName.BorderSize = 2;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtName.ForeColor = System.Drawing.Color.Black;
-            this.txtName.Location = new System.Drawing.Point(27, 52);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.Location = new System.Drawing.Point(31, 69);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtName.Multiline = false;
             this.txtName.Name = "txtName";
-            this.txtName.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
+            this.txtName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtName.PasswordChar = false;
             this.txtName.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.txtName.PlaceholderText = "Nombre";
             this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtName.Size = new System.Drawing.Size(210, 27);
+            this.txtName.Size = new System.Drawing.Size(241, 35);
             this.txtName.TabIndex = 49;
             this.txtName.Texts = "";
             this.txtName.UnderlinedStyle = false;
@@ -218,16 +212,16 @@
             this.txtEmail.BorderSize = 2;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(27, 100);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtEmail.Location = new System.Drawing.Point(31, 133);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtEmail.PasswordChar = false;
             this.txtEmail.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtEmail.Size = new System.Drawing.Size(210, 27);
+            this.txtEmail.Size = new System.Drawing.Size(241, 35);
             this.txtEmail.TabIndex = 49;
             this.txtEmail.Texts = "";
             this.txtEmail.UnderlinedStyle = false;
@@ -244,30 +238,29 @@
             this.txtPassword.BorderSize = 2;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(27, 148);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtPassword.Location = new System.Drawing.Point(31, 197);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(9, 5, 9, 5);
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtPassword.PasswordChar = true;
             this.txtPassword.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.txtPassword.PlaceholderText = "Contraseña";
             this.txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPassword.Size = new System.Drawing.Size(210, 27);
+            this.txtPassword.Size = new System.Drawing.Size(241, 35);
             this.txtPassword.TabIndex = 49;
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlinedStyle = false;
             // 
             // FrmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(707, 361);
+            this.ClientSize = new System.Drawing.Size(808, 481);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panelButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegister";

@@ -70,9 +70,10 @@ namespace BudgetWinForms.UI.Views
                     NameProject = txtName.Texts,
                     Description = txtDescription.Texts,
                     StartDate = dtStart.Value,
-                    EndDate = dtEnd.Value
+                    EndDate = dtEnd.Value,
+                    State = "Habilitado",
                 };
-
+                Clean();
                 await projectRepository.CreateAsync(project);
 
                 Customer customer = new Customer()
@@ -94,6 +95,12 @@ namespace BudgetWinForms.UI.Views
             {
                 MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Clean()
+        {
+            txtName.Texts = string.Empty;
+            txtDescription.Texts = string.Empty;
         }
 
         private void FrmAddProject_Load(object sender, EventArgs e)

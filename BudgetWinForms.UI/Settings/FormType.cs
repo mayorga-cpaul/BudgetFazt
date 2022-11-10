@@ -12,6 +12,8 @@
         FrmMain,
         FrmRegister,
         FrmStart,
-        FrmValidate
+        FrmValidate,
+        FrmGestion,
+        FrmUser,
     }
 }

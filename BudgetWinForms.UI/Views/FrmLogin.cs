@@ -59,7 +59,9 @@ namespace BudgetWinForms.UI.Views
                         DataOnMemory.UserId = user.Id;
                         SingletonForms.GetForm(FormType.FrmCompanies).Show();
                         SingletonForms.GetForm(FormType.FrmLogin).Hide();
-                    }else
+                        Textboxs();
+                    }
+                    else
                     {
                         throw new Exception("Contraseña incorrecta");
                     }
@@ -74,6 +76,12 @@ namespace BudgetWinForms.UI.Views
                 MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        public void Textboxs()
+        {
+            txtEmail.Texts = string.Empty;
+            txtPassword.Texts = string.Empty;
         }
 
         private void btnNewUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

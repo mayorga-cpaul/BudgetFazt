@@ -11,7 +11,7 @@ namespace BudgetFazt.Util.Processes
 
             foreach (var item in budgets)
             {
-                sum += Math.Round((item.UnitPrice - item.UnitPrice * item.Discount / 100)*item.Quantity, 2);
+                sum += Math.Round(item.UnitPrice - (item.UnitPrice) * (item.Discount / 100), 2);
 
                 budgetList.Add(new Budget 
                 {

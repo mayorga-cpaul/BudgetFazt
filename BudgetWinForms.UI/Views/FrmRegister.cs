@@ -62,7 +62,7 @@ namespace BudgetWinForms.UI.Views
 
                 // Mensaje de creación de usuario
                 MessageBox.Show("Usuario creado correctamente");
-
+                Clean();
                 // Abres el login para que acceda
                 SingletonForms.GetForm(FormType.FrmLogin).Show();
 
@@ -73,6 +73,13 @@ namespace BudgetWinForms.UI.Views
             {
                 MessageBox.Show(ex.Message, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Clean()
+        {
+            txtEmail.Texts = string.Empty;
+            txtName.Texts = string.Empty;
+            txtPassword.Texts = string.Empty;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

@@ -96,6 +96,7 @@ public partial class BudgetFaztContext : DbContext
             entity.Property(e => e.EndDate);
             entity.Property(e => e.NameProject);
             entity.Property(e => e.StartDate);
+            entity.Property(e => e.State);
 
             entity.HasOne(d => d.Company).WithMany(p => p.Project).HasForeignKey(d => d.CompanyId);
         });

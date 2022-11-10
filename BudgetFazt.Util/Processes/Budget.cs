@@ -10,7 +10,6 @@
         public double UnitPrice { get; set; }
         public double Discount { get; set; }
         public double PriceAfterDiscount { get; set; }
-        public double Total => Math.Round(PriceAfterDiscount * Quantity, 2); 
         public double SumTotal { get; set; }
     }
 }

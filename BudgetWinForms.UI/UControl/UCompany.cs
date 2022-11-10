@@ -37,8 +37,11 @@ namespace BudgetWinForms.UI.UControl
         private void UCompany_Click(object sender, EventArgs e)
         {
             DataOnMemory.CompanyId = companyId;
-            var tst = new FrmMain(userRepository, companyRepository, articleRepository, projectRepository, customerRepository);
-            tst.Show();
+            //var tst = new FrmMain(userRepository, companyRepository, articleRepository, projectRepository, customerRepository);
+            //tst.Show();
+
+            SingletonForms.GetForm(FormType.FrmMain).Show();
+
             SingletonForms.GetForm(FormType.FrmCompanies).Hide();
         }
     }

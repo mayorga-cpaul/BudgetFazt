@@ -17,6 +17,7 @@ public partial class Project
     public string Description { get; set; } = String.Empty;
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
+    public string State { get; set; } = string.Empty;
     public virtual ICollection<Article> Article { get; set; }
     public virtual Customer? Customer { get; set; }
     public virtual Company Company { get; set; } = null!;

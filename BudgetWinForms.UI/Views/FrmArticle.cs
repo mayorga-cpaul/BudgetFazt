@@ -47,7 +47,7 @@ namespace BudgetWinForms.UI.Views
                     Quality = cmbQuality.SelectedItem.ToString(),
                     Discount = double.Parse(txtDescuento.Texts),
                 };
-
+                Clean();
                 articleRepository.CreateAsync(article);
                 SingletonForms.GetForm(FormType.FrmBudget).Show();
                 this.Hide();
@@ -58,6 +58,15 @@ namespace BudgetWinForms.UI.Views
             }
         }
 
+        private void Clean()
+        {
+            txtArticleName.Texts = string.Empty;
+            txtDescription.Texts = string.Empty;
+            txtDescuento.Texts = string.Empty;
+            txtQuantity.Texts = string.Empty;
+            txtUnitPrice.Texts = string.Empty;
+            cmbQuality.SelectedIndex = 1;
+        }
         private void nightButton1_Click(object sender, EventArgs e)
         {
             SingletonForms.GetForm(FormType.FrmBudget).Show();

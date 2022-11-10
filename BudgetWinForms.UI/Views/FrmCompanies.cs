@@ -71,5 +71,10 @@ namespace BudgetWinForms.UI.Views
                 flowLayoutPanel1.Controls.Add(uCompany);
             }
         }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            SingletonForms.GetForm(FormType.FrmUser).ShowDialog();
+        }
     }
 }

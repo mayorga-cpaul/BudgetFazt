@@ -141,7 +141,7 @@
             this.btnAdd.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnAdd.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.btnAdd.Location = new System.Drawing.Point(281, 459);
+            this.btnAdd.Location = new System.Drawing.Point(278, 459);
             this.btnAdd.MinimumSize = new System.Drawing.Size(144, 47);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));

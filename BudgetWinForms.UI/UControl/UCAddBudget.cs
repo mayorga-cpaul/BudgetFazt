@@ -11,10 +11,10 @@ namespace BudgetWinForms.UI.UControl
         private readonly IProjectRepository projectRepository;
         private readonly ICustomerRepository customerRepository;
         private readonly ICompanyRepository companyRepository;
-
+        private readonly IUserRepository userRepository;
         private int projectId;
         public UCAddBudget(IArticleRepository articleRepository, IProjectRepository projectRepository, ICustomerRepository customerRepository,
-            ICompanyRepository companyRepository, int projectId)
+            ICompanyRepository companyRepository, int projectId, IUserRepository userRepository)
         {
             InitializeComponent();
             this.articleRepository = articleRepository;
@@ -22,12 +22,13 @@ namespace BudgetWinForms.UI.UControl
             this.customerRepository = customerRepository;
             this.companyRepository = companyRepository;
             this.projectId = projectId;
+            this.userRepository = userRepository;
         }
 
         private void UCAddBudget_Click(object sender, EventArgs e)
         {
             DataOnMemory.ProjectId = projectId;
-            FrmBudget frmBudget = new FrmBudget(articleRepository, customerRepository, companyRepository, projectRepository);
+            FrmBudget frmBudget = new FrmBudget(articleRepository, customerRepository, companyRepository, projectRepository, userRepository);
             frmBudget.Show();
             SingletonForms.GetForm(FormType.FrmMain).Hide();
         }

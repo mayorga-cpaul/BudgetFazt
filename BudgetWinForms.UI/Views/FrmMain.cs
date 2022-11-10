@@ -11,7 +11,6 @@ namespace BudgetWinForms.UI.Views
         private readonly IArticleRepository articleRepository;
         private readonly IProjectRepository projectRepository;
         private readonly ICustomerRepository customerRepository;
-
         public FrmMain(IUserRepository userRepository, ICompanyRepository companyRepository, 
             IArticleRepository articleRepository, IProjectRepository projectRepository, ICustomerRepository customerRepository)
         {
@@ -41,18 +40,18 @@ namespace BudgetWinForms.UI.Views
         private void FrmMain_Load(object sender, EventArgs e)
         {
             this.MinimumSize = new Size(864, 481);
-            AbrirFormEnPanel(new FrmStart(userRepository, companyRepository, articleRepository, projectRepository, customerRepository));
+            AbrirFormEnPanel(new FrmInit());
+            AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmStart));
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new FrmStart(userRepository, companyRepository, articleRepository, projectRepository, customerRepository));
+            AbrirFormEnPanel(SingletonForms.GetForm(FormType.FrmStart));
         }
 
         private void BtnBudget_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmCompanies).Show();
-            this.Close();
+            Application.Exit();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -78,6 +77,22 @@ namespace BudgetWinForms.UI.Views
 
         private void panelButtons_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void airForm1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FrmStart(userRepository, companyRepository, articleRepository, projectRepository, customerRepository));
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FrmGestionProject(projectRepository));
 
         }
     }

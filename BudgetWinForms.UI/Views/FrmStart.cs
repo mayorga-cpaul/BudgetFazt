@@ -35,9 +35,12 @@ namespace BudgetWinForms.UI.Views
         {
             var result = await projectRepository.GetAllProjects(DataOnMemory.CompanyId);
             flowLayoutPanel1.Controls.Clear();
-            foreach (var item in result)
+
+            var habilitados = result.Where(e => e.State.Equals("Habilitado"));
+
+            foreach (var item in habilitados)
             {
-                UCAddBudget uCAddBudget = new UCAddBudget(articleRepository, projectRepository,customerRepository,companyRepository, item.Id);
+                UCAddBudget uCAddBudget = new UCAddBudget(articleRepository, projectRepository,customerRepository,companyRepository, item.Id, userRepository);
                 flowLayoutPanel1.Controls.Add(uCAddBudget);
             }
         }

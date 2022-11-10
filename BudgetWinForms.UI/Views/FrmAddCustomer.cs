@@ -3,6 +3,8 @@ using BudgetFazt.Infraestructure.Models;
 using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using System.Xml.Serialization;
 
 namespace BudgetWinForms.UI.Views
 {
@@ -38,6 +40,7 @@ namespace BudgetWinForms.UI.Views
                 CustomerOnMemory.Email = txtEmail.Texts;
                 CustomerOnMemory.Phone = txtPhone.Texts;
                 CustomerOnMemory.Address = txtAddress.Texts;
+                Clean();
                 SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
             }
             catch (Exception ex)
@@ -46,6 +49,13 @@ namespace BudgetWinForms.UI.Views
             }
         }
 
+        private void Clean()
+        {
+            txtName.Texts = string.Empty;
+            txtEmail.Texts = string.Empty;
+            txtPhone.Texts = string.Empty;
+            txtAddress.Texts = string.Empty;
+        }
         private void nightButton1_Click(object sender, EventArgs e)
         {
             SingletonForms.GetForm(FormType.FrmAddCustomer).Hide();
