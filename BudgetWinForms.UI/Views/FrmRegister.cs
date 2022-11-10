@@ -25,6 +25,11 @@ namespace BudgetWinForms.UI.Views
         {
             try
             {
+                if (!ErrorMessage.IsValidEmail(txtEmail.Texts))
+                {
+                    throw new Exception("Este correo no existe, por favor intente nuevamente");
+                }
+
                 // Creas un usuario ya que se está registrando
 
                 ErrorMessage.ValidateStringEmpty(txtEmail.Texts);

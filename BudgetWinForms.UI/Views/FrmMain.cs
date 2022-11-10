@@ -1,4 +1,5 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
+using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Settings;
 using System.Runtime.InteropServices;
 
@@ -63,6 +64,7 @@ namespace BudgetWinForms.UI.Views
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+            DataOnMemory.State = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -73,6 +75,7 @@ namespace BudgetWinForms.UI.Views
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            DataOnMemory.State = true;
         }
 
         private void panelButtons_Paint(object sender, PaintEventArgs e)

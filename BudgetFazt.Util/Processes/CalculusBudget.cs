@@ -15,14 +15,14 @@ namespace BudgetFazt.Util.Processes
 
                 budgetList.Add(new Budget 
                 {
-                    Id = item.Id,
-                    ArticleName = item.Name,
+                    CódigoDeProducto = item.Id,
+                    NombreDeArticulo = item.Name,
                     Description = item.Description,
-                    Quality = item.Quality,
-                    Quantity = item.Quantity,
-                    UnitPrice = item.UnitPrice,
-                    Discount = item.Discount,
-                    PriceAfterDiscount = Math.Round(item.UnitPrice - (item.UnitPrice)*(item.Discount/100), 2),
+                    Calidad = item.Quality,
+                    Cantidad = item.Quantity,
+                    PrecioUnitario = item.UnitPrice,
+                    Descuento = item.Discount,
+                    PrecioDespuésDeDescuento = Math.Round(item.UnitPrice - (item.UnitPrice)*(item.Discount/100), 2),
                     SumTotal = sum,
                 });
             }

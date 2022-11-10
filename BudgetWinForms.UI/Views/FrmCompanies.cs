@@ -76,5 +76,25 @@ namespace BudgetWinForms.UI.Views
         {
             SingletonForms.GetForm(FormType.FrmUser).ShowDialog();
         }
+
+        private void btnCreate_MouseEnter(object sender, EventArgs e)
+        {
+            btnCreate.BackColor = Color.FromArgb(40, 153, 192);
+        }
+
+        private void btnCreate_MouseLeave(object sender, EventArgs e)
+        {
+            btnCreate.BackColor = Color.Ivory;
+        }
+
+        private void panel2_MouseEnter(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.FromArgb(40, 153, 192);
+        }
+
+        private void panel2_MouseLeave(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.Ivory;
+        }
     }
 }

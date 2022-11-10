@@ -124,16 +124,18 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnCreate.BackColor = System.Drawing.Color.Ivory;
             this.btnCreate.Controls.Add(this.nightLabel5);
             this.btnCreate.Controls.Add(this.nightLabel1);
             this.btnCreate.Controls.Add(this.pictureBox2);
-            this.btnCreate.Location = new System.Drawing.Point(496, 163);
+            this.btnCreate.Location = new System.Drawing.Point(494, 164);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(272, 131);
             this.btnCreate.TabIndex = 15;
             this.btnCreate.Click += new System.EventHandler(this.panel1_Click);
+            this.btnCreate.MouseEnter += new System.EventHandler(this.btnCreate_MouseEnter);
+            this.btnCreate.MouseLeave += new System.EventHandler(this.btnCreate_MouseLeave);
             // 
             // nightLabel5
             // 
@@ -173,16 +175,18 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel2.BackColor = System.Drawing.Color.Ivory;
             this.panel2.Controls.Add(this.nightLabel3);
             this.panel2.Controls.Add(this.nightLabel2);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(496, 299);
+            this.panel2.Location = new System.Drawing.Point(494, 311);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(272, 127);
             this.panel2.TabIndex = 16;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
+            this.panel2.MouseEnter += new System.EventHandler(this.panel2_MouseEnter);
+            this.panel2.MouseLeave += new System.EventHandler(this.panel2_MouseLeave);
             // 
             // nightLabel3
             // 

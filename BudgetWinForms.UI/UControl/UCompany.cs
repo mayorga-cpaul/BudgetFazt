@@ -44,5 +44,15 @@ namespace BudgetWinForms.UI.UControl
 
             SingletonForms.GetForm(FormType.FrmCompanies).Hide();
         }
+
+        private void UCompany_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(40, 153, 192);
+        }
+
+        private void UCompany_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Ivory;
+        }
     }
 }

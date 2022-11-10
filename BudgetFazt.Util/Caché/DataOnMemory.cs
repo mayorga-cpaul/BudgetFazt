@@ -10,6 +10,7 @@ namespace BudgetFazt.Util.Caché
         public static int ArticleId { get; set; }
         public static int CompanyId { get; set; }
         public static string UserName { get; set; } = String.Empty;
+        public static bool State { get; set; }
     }
 
     public static class CustomerOnMemory

@@ -36,29 +36,34 @@ namespace BudgetWinForms.UI.Views
             await ChargeLab();
             await ChargeDtg();
             ChargeResult();
+
+            if (DataOnMemory.State)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
         }
 
         private async Task ChargeDtg()
         {
-            poisonDataGridView1.DataSource = null;
+            dtgBudget.DataSource = null;
 
-            if (poisonDataGridView1.Rows.Count > 0)
+            if (dtgBudget.Rows.Count > 0)
             {
-                poisonDataGridView1.Rows.Clear();
+                dtgBudget.Rows.Clear();
             }
 
             budgets = CalculusBudget.GetBudget((await articleRepository.GetAllArticles(DataOnMemory.ProjectId)).ToList());
-            poisonDataGridView1.DataSource = budgets;
+            dtgBudget.DataSource = budgets;
+            dtgBudget.Columns[0].Visible = false;
 
-            poisonDataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            poisonDataGridView1.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtgBudget.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private async Task ChargeLab()
@@ -89,9 +94,10 @@ namespace BudgetWinForms.UI.Views
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmArticle).ShowDialog();
+            SingletonForms.GetForm(FormType.FrmArticle).Show();
             await ChargeDtg();
             ChargeResult();
+            this.Close();
         }
 
         private void ChargeResult()
@@ -129,8 +135,8 @@ namespace BudgetWinForms.UI.Views
             {
 
                 int id = 0;
-                if ((int)poisonDataGridView1.Rows.Count > 0)
-                    id = id = (int)poisonDataGridView1.Rows[poisonDataGridView1.CurrentRow.Index].Cells[0].Value;
+                if ((int)dtgBudget.Rows.Count > 0)
+                    id = id = (int)dtgBudget.Rows[dtgBudget.CurrentRow.Index].Cells[0].Value;
                 else
                     return;
 

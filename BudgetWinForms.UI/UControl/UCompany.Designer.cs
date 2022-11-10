@@ -83,6 +83,8 @@
             this.Size = new System.Drawing.Size(351, 68);
             this.Load += new System.EventHandler(this.UCompany_Load);
             this.Click += new System.EventHandler(this.UCompany_Click);
+            this.MouseEnter += new System.EventHandler(this.UCompany_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.UCompany_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

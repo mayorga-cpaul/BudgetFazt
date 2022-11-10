@@ -140,5 +140,18 @@ namespace BudgetWinForms.UI.Helper
                 throw new Exception("Por favor seleccione una fecha correcta");
             }
         }
+
+        public static bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address.Equals(email);
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

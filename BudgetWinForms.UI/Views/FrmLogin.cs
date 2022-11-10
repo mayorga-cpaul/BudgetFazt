@@ -1,5 +1,6 @@
 ﻿using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Util.Caché;
+using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
 using System.Runtime.InteropServices;
 
@@ -51,6 +52,10 @@ namespace BudgetWinForms.UI.Views
         {
             try
             {
+                if (!ErrorMessage.IsValidEmail(txtEmail.Texts))
+                {
+                    throw new Exception("Este correo no existe, por favor intente nuevamente");
+                }
                 if (await userRepository.ExistOnDb(txtEmail.Texts))
                 {
                     if (await userRepository.AccessToAppAsync(txtEmail.Texts, txtPassword.Texts))

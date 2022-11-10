@@ -1,6 +1,7 @@
 ﻿using BudgetFazt.Infraestructure.Enums;
 using BudgetFazt.Infraestructure.Interfaces;
 using BudgetFazt.Infraestructure.Models;
+using BudgetFazt.Infraestructure.Repositories;
 using BudgetFazt.Util.Caché;
 using BudgetWinForms.UI.Helper;
 using BudgetWinForms.UI.Settings;
@@ -12,14 +13,18 @@ namespace BudgetWinForms.UI.Views
         private readonly IUserRepository userRepository;
         private readonly ICompanyRepository companyRepository;
         private readonly IArticleRepository articleRepository;
+        private readonly ICustomerRepository customerRepository;
+        private readonly IProjectRepository projectRepository;
 
         public FrmArticle(IUserRepository userRepository, ICompanyRepository companyRepository,
-            IArticleRepository articleRepository)
+            IArticleRepository articleRepository, ICustomerRepository customerRepository, IProjectRepository projectRepository)
         {
             InitializeComponent();
             this.userRepository = userRepository;
             this.companyRepository = companyRepository;
             this.articleRepository = articleRepository;
+            this.customerRepository = customerRepository;
+            this.projectRepository = projectRepository;
         }
 
         private void FrmArticle_Load(object sender, EventArgs e)
@@ -49,7 +54,8 @@ namespace BudgetWinForms.UI.Views
                 };
                 Clean();
                 articleRepository.CreateAsync(article);
-                SingletonForms.GetForm(FormType.FrmBudget).Show();
+                FrmBudget frmBudget = new FrmBudget(articleRepository, customerRepository, companyRepository, projectRepository, userRepository);
+                frmBudget.Show();
                 this.Hide();
             }
             catch (Exception ex)
@@ -69,7 +75,8 @@ namespace BudgetWinForms.UI.Views
         }
         private void nightButton1_Click(object sender, EventArgs e)
         {
-            SingletonForms.GetForm(FormType.FrmBudget).Show();
+            FrmBudget frmBudget = new FrmBudget(articleRepository, customerRepository, companyRepository, projectRepository, userRepository);
+            frmBudget.Show();
             this.Hide();
         }
 

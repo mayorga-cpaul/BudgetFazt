@@ -2,14 +2,14 @@
 {
     public class Budget
     {
-        public int Id { get; set; }
-        public string ArticleName { get; set; } = string.Empty;
+        public int CódigoDeProducto { get; set; }
+        public string NombreDeArticulo { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public int Quantity { get; set; }
-        public string Quality { get; set; } = string.Empty;
-        public double UnitPrice { get; set; }
-        public double Discount { get; set; }
-        public double PriceAfterDiscount { get; set; }
+        public int Cantidad { get; set; }
+        public string Calidad { get; set; } = string.Empty;
+        public double PrecioUnitario { get; set; }
+        public double Descuento { get; set; }
+        public double PrecioDespuésDeDescuento { get; set; }
         public double SumTotal { get; set; }
     }
 }
